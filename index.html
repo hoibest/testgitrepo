@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <meta content="initial-scale=1.0, width=device-width" name="viewport">
+        <meta name="theme-color" content="#F3C1B6">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="header-content">
+                Uveitis
+            </div>
+        </header>
+
+        <div class="main">
+            <div class="main-row1">
+                Classification Tool for the Uveitides
+            </div>
+
+            <div class="main-row2">
+                <div class="main-row2-btn" onclick="goToPage('html/class-criteria.html')"> 
+                    <div class="row2-comp1"><img src="img/document-icon.png" class="doc-icon"></div>
+                    <div class="row2-comp2">Check Classification Criteria</div>
+                    <div class="row2-comp3"><img src="img/next-angle-icon.png" class="doc-icon"></div>
+                </div>
+                <div class="main-row2-btn" onclick="goToPage('html/select-location.html')">
+                    <div class="row2-comp1"><img src="img/tool2-icon.png" class="doc-icon"></div>
+                    <div class="row2-comp2">Start Uveitis Classification</div>
+                    <div class="row2-comp3"><img src="img/next-angle-icon.png" class="doc-icon"></div>
+                </div>
+            </div>
+
+            <div class="main-row3">
+                <span style="font-size:1.5rem;">Welcome to <span style="font-style:italic">Uveitis</span></span>
+                <br><br>
+                <span style="font-weight:400;">You can write down any information, texts, and diagrams here...</span>
+                <br><br>
+                <span>Ex) The classification criteria used in this app is written by the Standardization of Uveitis Nomenclature (SUN). 
+                    The working group has classified 25 of the most common uveitides.</span>
+                    
+
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer-content">
+                © Developing Uveitis Classification Application
+            </div>
+        </footer>
+        <script>
+            function goToPage(url){
+                window.location = url;
+            }
+        </script>
+    </body>
+</html>

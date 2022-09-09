@@ -1,0 +1,124 @@
+<html>
+    <head>
+        <meta content="initial-scale=1.0, width=device-width" name="viewport">
+        <meta name="theme-color" content="#F3C1B6">
+        <link rel="stylesheet" href="../../css/style.css">
+        <link rel="stylesheet" href="../../css/diagnosis.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="header-content">
+                Uveitis
+            </div>
+        </header>
+        <div class="nav">
+            <div class="nav-content-wrapper">
+                <div class="nav-text-content" id="nav-text-content">
+                    4/6 Ex-Ocular Disease
+                </div>
+                <div class="nav-bar-content">
+                    <div id="nav-greenbar" class="nav-greenbar"></div>
+                </div>
+            </div>
+        </div>
+        <div class="diagnosis-container">
+            <div class="row1">
+                <div>
+                <div class="row1-subtitle">Please select the characteristics in each box below</div>
+                <div class="row1-title">Extra-Ocular Diseases</div>
+                </div>
+            </div>
+            <div class="row2">
+                <!----------------------------------------------------->
+                <div class="row2-content">
+                    <div class="symptom"><div>Dermatomal herpes zoster</div></div>
+                    <div class="input">
+                        <select id="dermHZ-el" onchange="keepData(this)">
+                            <option value="">Select</option>
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                             <option value="Don't know">Don't know</option>
+                        </select>
+                    </div>
+                </div>
+                <!----------------------------------------------------->
+                <!----------------------------------------------------->
+                <div class="row2-content">
+                    <div class="symptom"><div>Oligoarthritis</div></div>
+                    <div class="input">
+                        <select id="oligoArth-el" onchange="keepData(this)">
+                            <option value="">Select</option>
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                             <option value="Don't know">Don't know</option>
+                        </select>
+                    </div>
+                </div>
+                <!----------------------------------------------------->
+                <!----------------------------------------------------->
+                <div class="row2-content">
+                    <div class="symptom">Polyarthritis</div>
+                    <div class="input">
+                        <select id="rfNegPolyArth-el" onchange="keepData(this)">
+                            <option value="">Select</option>
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                             <option value="Don't know">Don't know</option>
+                        </select>
+                    </div>
+                </div>
+                <!----------------------------------------------------->
+                <!----------------------------------------------------->
+                <div class="row2-content">
+                    <div class="symptom">Psoriasis and Arthritis</div>
+                    <div class="input">
+                        <select id="juvPsorArth-el" onchange="keepData(this)">
+                            <option value="">Select</option>
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                             <option value="Don't know">Don't know</option>
+                        </select>
+                    </div>
+                </div>
+                <!----------------------------------------------------->
+                <!----------------------------------------------------->
+                <div class="row2-content">
+                    <div class="symptom">Diagnosed spondyloarthritis</div>
+                    <div class="input">
+                        <select id="spondyloArth-el" onchange="keepData(this)">
+                            <option value="">Select</option>
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                             <option value="Don't know">Don't know</option>
+                        </select>
+                    </div>
+                </div>
+                <!----------------------------------------------------->
+            </div>
+            <div class="row3">
+                <div class="backNext">
+                    <div>
+                        <a href="diagnosis03.html"><button class="backButton" onclick="">Back</button></a>
+                    </div>
+                    <div class="nextDiv">
+                        <a href="diagnosis05.html"><button class="nextButton">Next</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="footer-content">
+                © Developing Uveitis Classification Application
+            </div>
+        </footer>
+        <script src="../../js/loading.js"></script>
+        <script>
+            let idList = ['dermHZ-el','oligoArth-el','rfNegPolyArth-el','juvPsorArth-el','spondyloArth-el']
+            loadData(idList);
+            design(4);
+        </script>
+    </body>
+</html>

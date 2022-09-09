@@ -1,0 +1,72 @@
+.select-title{
+    margin-top: 2.5rem;
+    width: 100%;
+    max-width: 550px;
+    font-size: 1.6rem;
+    font-weight: 200;
+    font-family: 'Poppins';
+}
+
+.select-subtitle{
+    width: 100%;
+    max-width: 550px;
+    font-size: 22px;
+    font-weight: 700;
+    font-family: 'Poppins';
+}
+
+.location-btns{
+    /*border: 1px dotted blue;*/
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.anat-btn{
+    width: 100%;
+    max-width: 550px;
+    background-color: #EBAE9B;
+    height: 51px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 2px 4px 0px #00000040;
+}
+
+.anat-btn:hover{
+    background-color: #F3C1B6;
+    cursor: pointer;
+}
+
+.anat-btn+.anat-btn{
+    margin-top: 14px;
+}
+
+.anat-comp1{
+    /*border: 1px dotted black;*/
+    padding-left: 14px;
+    height: 25px;
+}
+
+.doc-icon{
+    width: 25px;
+    height: 25px;
+}
+
+.anat-comp2{
+    width: 80%;
+    padding-left: 10px;
+    /*border: 1px dotted black;*/
+}
+
+.anat-comp3{
+    width: 10%;
+    /*border: 1px dotted black;*/
+}
+
+.next-icon{
+    width: 25px;
+    height: 25px;
+}

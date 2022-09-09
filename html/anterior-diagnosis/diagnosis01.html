@@ -1,0 +1,150 @@
+<html>
+    <head>
+        <meta content="initial-scale=1.0, width=device-width" name="viewport">
+        <meta name="theme-color" content="#F3C1B6">
+        <link rel="stylesheet" href="../../css/style.css">
+        <link rel="stylesheet" href="../../css/diagnosis.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="header-content">
+                Uveitis
+            </div>
+        </header>
+        <div class="nav">
+            <div class="nav-content-wrapper">
+                <div class="nav-text-content" id="nav-text-content">
+                    1/6 History
+                </div>
+                <div class="nav-bar-content">
+                    <div id="nav-greenbar" class="nav-greenbar"></div>
+                </div>
+            </div>
+        </div>
+        <div class="diagnosis-container">
+            <div class="row1">
+                <div>
+                <div class="row1-subtitle">Please select the characteristics in each box below</div>
+                <div class="row1-title">Uveitis History</div>
+                </div>
+            </div>
+            <div class="row2">
+                <!----------------------------------------------------->
+                <div class="row2-content">
+                    <div class="symptom"><div>Age</div></div>
+                    <div class="input">
+                        <select id="age-el" onchange="keepData(this)"> 
+                            <option value="">Select</option>                   
+                            <option value="≤16">≤16</option>
+                            <option value="17-50">17-50</option>
+                            <option value="51-59">51-59</option>
+                            <option value="≥60">≥60</option>
+                            <option value="Don't know">Don't know</option>
+                        </select>
+                    </div>
+                </div>
+                <!----------------------------------------------------->
+                <div class="row2-content">
+                    <div class="symptom"><div>First diagnosis</div></div>
+                    <div class="input">
+                        <select id="firstDiagnosis-el" onchange="keepData(this)"> 
+                            <option value="">Select</option>                   
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                            <option value="Don't know">Don't know</option>
+                        </select>
+                    </div>
+                </div>
+                <!----------------------------------------------------->
+                <div class="row2-content">
+                    <div class="symptom"><div>Asymptomatic/minimally symptomatic</div></div>
+                    <div class="input">
+                        <select id="symptomatic-el" onchange="keepData(this)"> 
+                            <option value="">Select</option>                   
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                            <option value="Don't know">Don't know</option>
+                        </select>
+                    </div>
+                </div>
+                <!----------------------------------------------------->
+                <div class="row2-content">
+                    <div class="symptom">Onset</div>
+                    <div class="input">
+                        <select id="onset-el" onchange="keepData(this)">
+                            <option value="">Select</option>
+                            <option value="sudden">Sudden</option>
+                            <option value="insidious">Insidious</option>
+                            <option value="Don't know">Don't know</option>
+                        </select>
+                    </div>
+                </div>
+                <!----------------------------------------------------->
+                <div class="row2-content">
+                    <div class="symptom"><div>Course</div></div>
+                    <div class="input">
+                        <select id="course-el" onchange="keepData(this)">                    
+                            <option value="">Select</option>
+                            <option value="acute, monophasic">Acute, monophasic</option>
+                            <option value="acute, recurrent">Acute, recurrent</option>
+                            <option value="chronic">Chronic</option>
+                            <option value="Don't know">Don't know</option>
+                        </select>
+                    </div>
+                </div>
+                <!----------------------------------------------------->
+                <div class="row2-content">
+                    <div class="symptom">Laterality</div>
+                    <div class="input">
+                        <select id="laterality-el" onchange="keepData(this)">
+                            <option value="">Select</option>
+                            <option value='unilateral'>Unilateral</option>
+                            <option value='unilateral, alternating'>Unilateral, alternating</option>
+                            <option value="bilateral">Bilateral</option>
+                            <option value="Don't know">Don't know</option>
+                        </select>
+                    </div>
+                </div>
+                <!----------------------------------------------------->
+            </div>
+            <div class="row3">
+                <div class="backNext">
+                    <div>
+                        <a id="diagnosis1"><button onclick="warning()" class="backButton" id="backButton">Back</button></a>
+                    </div>
+                    <div class="nextDiv">
+                        <a href="diagnosis02.html"><button class="nextButton">Next</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="footer-content">
+                © Developing Uveitis Classification Application
+            </div>
+        </footer>
+        <script src="../../js/loading.js"></script>
+        <script>
+            let idList = ['age-el','firstDiagnosis-el','symptomatic-el','onset-el','course-el','laterality-el']
+            loadData(idList);
+            design(1);
+        </script>
+        <script>
+             function warning(){
+                let text = 
+                `
+Leave page?
+Changes that you made will not be saved`;
+                if (confirm(text) == true) {
+                    sessionStorage.clear();
+                    goToPage('../select-location.html')
+                } else {
+                    document.getElementById("diagnosis1").setAttribute("href","");
+                }
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,252 @@
+.header-content{
+    padding-bottom: 24.8px;
+}
+
+.nav{
+    background-color: #FADCD6;
+    padding: 0.6rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-content-wrapper{
+    width: 87.7%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-text-content{
+    font-size: 0.75rem;
+}
+
+.nav-bar-content{
+    width: 30%;
+    max-width: 250px;
+    background-color: #EBAE9B;
+    border-radius: 5px;
+}
+
+.nav-greenbar{
+    background-color: #59A77D;
+    height: 100%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    width: 0%;
+}
+
+
+.diagnosis-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.diagnosis-container > .row1{
+    width: 100%;
+    padding-top: 1.5rem;
+    padding-bottom: 1.8rem;
+    border-bottom: 1px solid #e2e2e2;
+    display: flex;
+    justify-content: center;
+}
+
+.row1>div{
+    width: 87.7%;
+}
+
+.row1-subtitle{font-size: 0.75rem; font-family: 'Poppins';}
+.row1-title{font-size: 1.5rem; font-family: 'Poppins';}
+
+.diagnosis-container > .row2{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+}
+
+.uveitides{
+    height: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 1px;
+    background-color: #f6e8e4;
+}
+
+.uveitides > div {
+    width: fit-content;
+    margin-left: 6.15%;
+    font-weight: 500;
+}
+
+.content{
+    height: 48px;
+    display: flex;
+    align-items: center;
+}
+
+
+
+.c-comp1 {
+    width: 6.15%;
+    height: 100%;
+    background-color: #77B794;
+}
+.p-comp1 {
+    width: 6.15%;
+    height: 100%;
+    background-color: #4f66c9;
+}
+
+.e-comp1 {
+    width: 6.15%;
+    height: 100%;
+    background-color: #E64626;
+    opacity: 0.6;
+}
+
+.content > .comp2 {
+    width: 75%;
+    height: fit-content;
+    padding-left: 1.5rem;
+    font-size: 14px;
+}
+
+.content > .comp3 {
+    width: 18.75%;
+    display: flex;
+    justify-content: center;
+}
+
+.comp3 > img{
+    width: 13px;
+    height: 12px;
+}
+
+.show-result{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 25px;
+    width: 100%;
+    background-color: #eeecec;
+    overflow: hidden;
+    display: none;
+}
+
+.criteria-link{
+    width: 87.7%;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    border-bottom: 1px solid black;
+    color: #4f66c9;
+    cursor: pointer;
+}
+
+.criteria-link:hover{
+    cursor: pointer;
+}
+
+
+.not-fulfilled{
+    width: 87.7%;
+    padding-top: 2rem;
+    border-bottom: 1px solid black;
+  
+}
+
+.fulfilled{
+    width: 87.7%;
+    padding-top: 2rem;
+    border-bottom: 1px solid black;
+}
+
+.contradicted{
+    width: 87.7%;
+    padding-top: 2rem;
+    border-bottom: 1px solid black;
+}
+
+.user-input-box{
+    margin-top: 2rem;
+    background-color: #D9D9D9;
+    border: 1px solid #353434;
+    padding: 0.75rem 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.user-input-href{
+    text-decoration: underline;
+    text-decoration-style: dotted;
+}
+
+.user-input-ans{
+    background-color: #FADCD6;
+    border-radius: 7px;
+    padding: 1px 5px;
+}
+
+.na{
+    margin-bottom: 2rem;
+}
+
+
+
+
+/****************************************************************************/
+.row3{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid #e2e2e2;
+}
+
+.backNext {
+    width: 87.7%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.75rem 0;
+}
+
+
+.backButton {
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.25rem;
+    color: #e64626;
+    padding: 0.5rem 0.5rem 0.5rem 0;
+}
+
+.backButton:hover{
+    color: #FADCD6;
+}
+
+.nextButton {
+    background-color: #59A77D;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: white;
+    padding: 0.5rem 1.25rem;
+}
+
+.nextButton:hover{
+    background-color: #7ea892;
+}
+/****************************************************************************/
+
+ol{
+    margin: 0;
+    padding-right: 0;
+    padding-left: 6.15%;
+}
+
+ul{
+    margin: 0;
+    padding-right: 0;
+    padding-left: 6.15%;
+}

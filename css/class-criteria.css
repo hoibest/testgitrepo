@@ -1,0 +1,49 @@
+.class-title{
+    /*border: 1px dotted green;*/
+    margin-top: 2.5rem;
+    width: 100%;
+    max-width: 550px;
+    font-size: 1.6rem;
+    font-weight: 200;
+    font-family: 'Poppins';
+}
+
+.table-of-contents{
+    /*border: 1px dotted green;*/
+    width: 100%;
+    max-width: 550px;
+    font-size: 1.6rem;
+    font-weight: 700;
+    font-family: 'Poppins';
+}
+
+.main-table{
+    /*border: 1px dotted red;*/
+    margin-top: 1.8rem;
+    width: 100%;
+    max-width: 550px;
+    line-height: 25px;
+}
+
+.main-table>ul>li>a{
+    text-decoration: underline;
+    text-decoration-style:dotted;
+    color: black;
+}
+
+
+.main-table>ul>li>a:hover{
+    text-decoration: underline;
+    text-decoration-style:dotted;
+    color: #747070;
+    text-decoration-color: grey;
+    cursor: pointer;
+}
+
+
+
+
+ul{
+    margin: 0;
+    padding-left: 6.15%;
+}

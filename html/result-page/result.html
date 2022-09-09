@@ -1,0 +1,151 @@
+<html>
+    <head>
+        <meta content="initial-scale=1.0, width=device-width" name="viewport">
+        <meta name="theme-color" content="#F3C1B6">
+        <link rel="stylesheet" href="../../css/style.css">
+        <link rel="stylesheet" href="../../css/result.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="header-content">
+                Uveitis
+            </div>
+        </header>
+        <div class="nav">
+            <div class="nav-content-wrapper">
+                <div class="nav-text-content" id="nav-text-content">
+                    6/6 Result
+                </div>
+                <div class="nav-bar-content">
+                    <div id="nav-greenbar" class="nav-greenbar"></div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="diagnosis-container">
+            <div class="row1">
+                <div>
+                <div class="row1-subtitle">Please click and see details for each uveitis</div>
+                <div class="row1-title">Result</div>
+                </div>
+            </div>
+            <div class="row2">
+                <div class="uveitides"><div>Classified Uveitides</div></div>
+                <div id="c-uveitides"></div>
+
+                <div class="uveitides"><div>Possible Uveitides</div></div>
+                <div id="p-uveitides"></div>
+
+                <!--<div class="show-result">
+                    <div class="criteria-btn">Check the classification criteria</div>
+                    <div id="criteria-not-fulfilled" class="not-fulfilled">
+                        <div style="font-size:20px;">Criteria not fulfilled</div>
+                        <br>
+                        <div>
+                            <div>
+                                <div id="dis-html"> put 'dis_html_rule'
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="criteria-fulfilled" class="fulfilled">
+                        <div style="font-size:20px;">Criteria not fulfilled</div>
+                        <br>
+                        <div>
+                            <ul style="font-weight:500">
+                                <li>Evidence of cytomegalovirus infection in the eye
+                                    <ol type="a" style="font-weight:400;">
+                                        <li>Positive PCR for cytomegalovirus on aqueous specimen</li>
+                                    </ol>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="user-input-box">
+                            <div style="font-weight:500;">User Input</div>
+                            <div class="user-input"><span class="user-input-href">HSV PCR(+)</span>: <span class="user-input-ans">Don't know</span></div>
+                        </div>
+                    </div>
+                    <div id="criteria-contradicted" class="contradicted">
+                        <div style="font-size:20px;">Criteria not fulfilled</div>
+                        <br>
+                        <div>
+                            <ul style="font-weight:500">
+                                <li>Evidence of cytomegalovirus infection in the eye
+                                    <ol type="a" style="font-weight:400;">
+                                        <li>Positive PCR for cytomegalovirus on aqueous specimen</li>
+                                    </ol>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="user-input-box">
+                            <div style="font-weight:500;">User Input</div>
+                            <div class="user-input"><span class="user-input-href">HSV PCR(+)</span>: <span class="user-input-ans">Don't know</span></div>
+                        </div>
+                    </div>
+                </div>-->
+
+                <div class="uveitides"><div>Excluded Uveitides</div></div>
+                <div id="e-uveitides"></div>
+                
+            </div>
+        </div>
+
+
+
+
+
+
+        <div class="row3">
+            <div class="backNext">
+                <div>
+                    <a href="../anterior-diagnosis/diagnosis05.html"><button class="backButton" onclick="">Back</button></a>
+                </div>
+                <div class="nextDiv">
+                    <a id="finish"><button class="nextButton" onclick="warning()">Finish</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-content">
+            © Developing Uveitis Classification Application
+        </div>
+    </footer>
+    <script src="../../js/loading.js"></script>
+    <script>design(6)</script>
+    <script src="../../js/patient.js"></script>
+    <script>patient.patientUpdate();</script>
+    <script src="../../js/terms.js"></script>
+    <script src="../../js/anterior-rule.js"></script>
+    <script>antDiagnosis();</script>
+    <script src="../../js/ant-html-rule.js"></script>
+    <script src="../../js/anterior-term.js"></script>
+    <script src="../../js/sort.js"></script>
+    <script>
+        document.getElementById('c-uveitides').innerHTML = joinText(dxText,"");
+        document.getElementById('p-uveitides').innerHTML = joinText(possText,"");
+        document.getElementById('e-uveitides').innerHTML = joinText(exText,"");
+    </script>
+    <script>
+        function warning(){
+                let text = 
+                `
+Finish classification?
+Changes that you made will not be saved`;
+                if (confirm(text) == true) {
+                    sessionStorage.clear();
+                    goToPage('../select-location.html')
+                }
+                else{
+                    document.getElementById("finish").setAttribute("href","");
+                }
+            }
+    </script>
+</body>
+</html>

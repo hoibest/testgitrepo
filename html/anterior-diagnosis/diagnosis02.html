@@ -1,0 +1,193 @@
+<html>
+    <head>
+        <meta content="initial-scale=1.0, width=device-width" name="viewport">
+        <meta name="theme-color" content="#F3C1B6">
+        <link rel="stylesheet" href="../../css/style.css">
+        <link rel="stylesheet" href="../../css/diagnosis.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="header-content">
+                Uveitis
+            </div>
+        </header>
+        <div class="nav">
+            <div class="nav-content-wrapper">
+                <div class="nav-text-content" id="nav-text-content">
+                    2/6 Examination(1)
+                </div>
+                <div class="nav-bar-content">
+                    <div id="nav-greenbar" class="nav-greenbar"></div>
+                </div>
+            </div>
+        </div>
+        <div class="diagnosis-container">
+            <div class="row1">
+                <div>
+                <div class="row1-subtitle">Please select the characteristics in each box below</div>
+                <div class="row1-title">Ophthalmic Examination</div>
+                </div>
+            </div>
+            <div class="row2">
+                <!----------------------------------------------------->
+                <div class="row2-content">
+                    <div class="symptom"><div>Keratic Precipitates</div></div>
+                    <div class="input">
+                        <select id="kp-el" onchange="keepData(this)">                    
+                            <option value="">Select</option>
+                            <option value="stellate">Stellate</option>
+                            <option value="granulomatous">Granulomatous</option>
+                            <option value="non-granulomatous">Non-granulomatous</option>
+                            <option value="none">None</option>
+                            <option value="Don't know">Don't know</option>
+                        </select>
+                    </div>
+                </div>
+                <!----------------------------------------------------->
+                <!----------------------------------------------------->
+                <div class="row2-content">
+                    <div class="symptom">Anterior Chamber Cells</div>
+                    <div class="input">
+                        <select id="antChamberCells-el" onchange="keepData(this)">
+                            <option value="">Select</option>
+                            <option value=0>0</option>
+                            <option value=0.5>½+</option>
+                            <option value=1>1+</option>
+                            <option value=2>2+</option>
+                            <option value=3>3+</option>
+                            <option value=4>4+</option>
+                             <option value="Don't know">Don't know</option>
+                        </select>
+                    </div>
+                </div>
+                <!----------------------------------------------------->
+                <div class="row2-content">
+                    <div class="symptom"><div>Anterior Chamber Flare</div></div>
+                    <div class="input">
+                        <select id="antChamberFlare-el" onchange="keepData(this)">
+                            <option value="">Select</option>
+                            <option value=0>0</option>
+                            <option value=1>1+</option>
+                            <option value=2>2+</option>
+                            <option value=3>3+</option>
+                            <option value=4>4+</option>
+                             <option value="Don't know">Don't know</option>
+                        </select>
+                    </div>
+                </div>
+                <!----------------------------------------------------->
+                <div class="row2-content">
+                    <div class="symptom"><div style="font-weight:300;">Iris</div></div>
+                </div>
+                <!----------------------------------------------------->
+                <div class="row2-content">
+                    <div class="symptom"><div>Iris Atrophy</div></div>
+                    <div class="input">
+                        <select id="irisAtrophy-el" onchange="keepData(this)">
+                            <option value="">Select</option>
+                            <option value="sectoral">Sectoral</option>
+                            <option value="diffuse">Diffuse</option>
+                            <option value="diffuse">Patchy</option>
+                            <option value="none">None</option>
+                             <option value="Don't know">Don't know</option>
+                        </select>
+                    </div>
+                </div>
+                <!----------------------------------------------------->
+                <!----------------------------------------------------->
+                <div class="row2-content">
+                    <div class="symptom"><div>Heterochromia</div></div>
+                    <div class="input">
+                        <select id="heterochromia-el" onchange="keepData(this)">
+                            <option value="">Select</option>
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                             <option value="Don't know">Don't know</option>
+                        </select>
+                    </div>
+                </div>
+                <!----------------------------------------------------->
+                <div class="row2-content">
+                    <div class="symptom"><div>Iris Nodules</div></div>
+                    <div class="input">
+                        <select id="irisNodules-el" onchange="keepData(this)">
+                            <option value="">Select</option>
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                             <option value="Don't know">Don't know</option>
+                        </select>
+                    </div>
+                </div>
+                <!----------------------------------------------------->
+                <div class="row2-content">
+                    <div class="symptom"><div style="font-weight:300;">Cornea</div></div>
+                </div>
+                <!----------------------------------------------------->
+                <!----------------------------------------------------->
+                <div class="row2-content">
+                    <div class="symptom"><div>Keratitis</div></div>
+                    <div class="input">
+                        <select id="keratitis-el" onchange="keepData(this)"> 
+                            <option value="">Select</option>                   
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                             <option value="Don't know">Don't know</option>
+                        </select>
+                    </div>
+                </div>
+                <!----------------------------------------------------->
+                <!----------------------------------------------------->
+                <div class="row2-content">
+                    <div class="symptom"><div>Endotheliitis</div></div>
+                    <div class="input">
+                        <select id="endotheliitis-el" onchange="keepData(this)">
+                            <option value="">Select</option>
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                             <option value="Don't know">Don't know</option>
+                        </select>
+                    </div>
+                </div>
+                <!----------------------------------------------------->
+                <div class="row2-content">
+                    <div class="symptom"><div>Nodular, coin-shaped endothelial lesions</div></div>
+                    <div class="input">
+                        <select id="endoLesions-el" onchange="keepData(this)">
+                            <option value="">Select</option>
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                             <option value="Don't know">Don't know</option>
+                        </select>
+                    </div>
+                </div>
+                <!----------------------------------------------------->
+                <!----------------------------------------------------->
+            </div>
+            <div class="row3">
+                <div class="backNext">
+                    <div>
+                        <a href="diagnosis01.html"><button class="backButton" onclick="">Back</button></a>
+                    </div>
+                    <div class="nextDiv">
+                        <a href="diagnosis03.html"><button class="nextButton">Next</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="footer-content">
+                © Developing Uveitis Classification Application
+            </div>
+        </footer>
+        <script src="../../js/loading.js"></script>
+        <script>
+            let idList = ['antChamberFlare-el','antChamberCells-el','kp-el','irisAtrophy-el',
+            'heterochromia-el','irisNodules-el','keratitis-el','endotheliitis-el','endoLesions-el']
+            loadData(idList);
+            design(2);
+        </script>
+    </body>
+</html>

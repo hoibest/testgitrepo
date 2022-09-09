@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <meta content="initial-scale=1.0, width=device-width" name="viewport">
+        <meta name="theme-color" content="#F3C1B6">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/select-location.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="header-content">
+                Uveitis
+            </div>
+        </header>
+
+        <div class="main">
+            <div class="select-title">Start Uveitis Classification</div>
+            <div class="select-subtitle">Primary site of inflammation</div>
+            <div class="location-btns">
+                <div class="anat-btn" onclick="goToPage('anterior-diagnosis/diagnosis01.html')">
+                    <div class="anat-comp1"><img src="../img/anterior-icon.png" class="doc-icon"></div>
+                    <div class="anat-comp2">Anterior Uveitis</div>
+                    <div class="anat-comp3"><img src="../img/next-angle-icon.png" class="next-icon"></div>
+                </div>
+                <div class="anat-btn">
+                    <div class="anat-comp1"><img src="../img/intermediate-icon.png" class="doc-icon"></div>
+                    <div class="anat-comp2">Intermediate Uveitis<span style="font-weight: 300; font-size:10px;"> (update soon)</span></div>
+                    <div class="anat-comp3"><img src="../img/next-angle-icon.png" class="next-icon"></div>
+                </div>
+                <div class="anat-btn">
+                    <div class="anat-comp1"><img src="../img/posterior-icon.png" class="doc-icon"></div>
+                    <div class="anat-comp2">Posterior Uveitis<span style="font-weight: 300; font-size:10px;"> (update soon)</span></div>
+                    <div class="anat-comp3"><img src="../img/next-angle-icon.png" class="next-icon"></div>
+                </div>
+                <div class="anat-btn">
+                    <div class="anat-comp1"><img src="../img/panuveitis-icon.png" class="doc-icon"></div>
+                    <div class="anat-comp2">Panveitis<span style="font-weight: 300; font-size:10px;"> (update soon)</span></div>
+                    <div class="anat-comp3"><img src="../img/next-angle-icon.png" class="next-icon"></div>
+                </div>
+                <div class="anat-btn" style='background-color: #F3C1B6;' onclick="goToPage('../index.html')">
+                    <div class="anat-comp1"><img src="../img/home-icon.png" style='width: 23px;
+                        height: 23px;'></div>
+                    <div class="anat-comp2">Front Page</span></div>
+                    <div class="anat-comp3"><img src="../img/next-angle-icon.png" class="next-icon"></div>
+                </div>
+            </div>
+        </div>
+
+
+        <footer>
+            <div class="footer-content">
+                © Developing Uveitis Classification Application
+            </div>
+        </footer>
+        <script>
+            function goToPage(url){
+                window.location = url;
+            }
+        </script>
+    </body>
+</html>
