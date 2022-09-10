@@ -46,7 +46,7 @@ const ophthalExamObj = {
         this.vitCells = grade(getSavedData('vitCells-el'));
         this.vitHaze = grade(getSavedData('vitHaze-el'));
         //this.vitritis = getSavedData('vitritis-el');
-        //this.choroiditis = getSavedData('choroiditis-el');
+        this.choroiditis = getSavedData('choroiditis-el');
         this.retinitis = getSavedData('retinitis-el');
         //this.retVasChanges = getSavedData('retVasChanges-el');
     }

@@ -85,6 +85,11 @@
     align-items: center;
 }
 
+.content:hover{
+    cursor: pointer;
+    background-color: #eeeaea;
+}
+
 
 
 .c-comp1 {

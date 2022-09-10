@@ -20,7 +20,7 @@ const ENDO_LESIONS = p.ophthalExamObj.endoLesions;
 const VIT_CELLS = p.ophthalExamObj.vitCells;
 const VIT_HAZE = p.ophthalExamObj.vitHaze;
 //const VITRITIS = p.ophthalExamObj.vitritis;
-//const CHOROIDITIS = p.ophthalExamObj.choroiditis;
+const CHOROIDITIS = p.ophthalExamObj.choroiditis;
 const RETINITIS = p.ophthalExamObj.retinitis;
 //const RET_VAS_CHANGES = p.ophthalExamObj.retVasChanges;
 ///////////////////////////////////////////////////////////////////////

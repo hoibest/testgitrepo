@@ -4,7 +4,7 @@ let exText = [];
 let possText = [];
 
 const cmvau = {
-    link: "../classification/cmvau.html",
+    link: "../classification/anterior/cmvau.html",
     disList: cmvauList,
     nameShort : 'CMVAU',
     nameLong : 'Cytomegalovirus Anterior Uveitis',
@@ -22,7 +22,7 @@ const cmvau = {
 }
 
 const hsau = {
-    link: "../classification/hsau.html",
+    link: "../classification/anterior/hsau.html",
     disList : hsauList,
     nameShort : 'HSAU',
     nameLong : 'Herpes Simplex Anterior Uveitis',
@@ -40,7 +40,7 @@ const hsau = {
 }
 
 const vzvau = {
-    link: "../classification/vzvau.html",
+    link: "../classification/anterior/vzvau.html",
     disList : vzvauList,
     disRules: [vzvauRule_1,vzvauRule_2,vzvauRule_3],
     nameShort : 'VZVAU',
@@ -58,7 +58,7 @@ const vzvau = {
 }
 
 const fus = {
-    link: "../classification/fus.html",
+    link: "../classification/anterior/fus.html",
     disList : fusList,
     disRules: [fusRule_1,fusRule_2,fusRule_3,fusRule_4],
     nameShort : 'FUS',
@@ -76,7 +76,7 @@ const fus = {
 }
 
 const jiacau = {
-    link: "../classification/jiacau.html",
+    link: "../classification/anterior/jiacau.html",
     disList : jiacauList,
     disRules: [jiacauRule_1,jiacauRule_2,jiacauRule_3],
     nameShort : 'JIACAU',
@@ -94,7 +94,7 @@ const jiacau = {
 }
 
 const shau = {
-    link: "../classification/shau.html",
+    link: "../classification/anterior/shau.html",
     disList : sauList,
     disRules: [sauRule_1,sauRule_2,sauRule_3,sauRule_4],
     nameShort : 'SHAU',
@@ -112,7 +112,7 @@ const shau = {
 }
 
 const tinu = {
-    link: "../classification/tinu.html",
+    link: "../classification/anterior/tinu.html",
     disList : tinuList,
     disRules : [tinuRule_1,tinuRule_2],
     nameShort : 'TINU',

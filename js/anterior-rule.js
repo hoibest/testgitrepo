@@ -637,6 +637,17 @@ function tinuRuleOne(){
     else{
         b = IDK;
     }*/
+    if(VIT_CELLS==0 && CHOROIDITIS=='no'){
+        b = TRUE;
+    }
+    else if(VIT_CELLS>0 || CHOROIDITIS=='yes'){
+        b = numIs(ANT_CHAMBER_CELLS);
+    }
+    else{
+        b = IDK;
+    }
+
+    /*
     if(VIT_CELLS > 0){
         if(ANT_CHAMBER_FLARE != dk){
             if(ANT_CHAMBER_FLARE > 0){
@@ -655,7 +666,7 @@ function tinuRuleOne(){
     }
     else{
         b = IDK;
-    }
+    }*/
 
     if(a==FALSE||b==FALSE){
         disList.outList.push(rule);
