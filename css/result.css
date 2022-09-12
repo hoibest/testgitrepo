@@ -146,12 +146,18 @@
     text-decoration: underline;
     text-decoration-style: dotted;
     border-bottom: 1px solid black;
+}
+
+.criteria-link>a{
+    text-decoration: underline;
+    text-decoration-style: dotted;
     color: #4f66c9;
     cursor: pointer;
 }
 
-.criteria-link:hover{
+.criteria-link>a:hover{
     cursor: pointer;
+    color: #8f98c7;
 }
 
 
@@ -189,7 +195,8 @@
 }
 
 .user-input-href > a:hover{
-    color: #747070;;
+    color: #747070;
+    cursor: pointer;
 }
 
 

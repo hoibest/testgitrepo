@@ -194,7 +194,7 @@ function createBtn(dis,type){
         <div class='comp3' id="comp3-${dis.nameShort}"><img src='../../img/dropdown-icon.png'></div>
     </div>
     <div class="show-result" id="show-result-${dis.nameShort}">
-        <div class="criteria-link" onclick="goToPage('${dis.link}')"><a>Check the classification criteria</a></div>
+        <div class="criteria-link"><a href="${dis.link}">Check the classification criteria</a></div>
         <div id="criteria-not-fulfilled" class="not-fulfilled">
             <div style="font-size:20px;font-weight:700;">Criteria not fulfilled</div>
             <div style="font-size:12px;font-weight:400;">Requires further evidence to be fulfilled</div>

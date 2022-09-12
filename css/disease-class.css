@@ -45,6 +45,11 @@
 .exclusion-title>div{
 }
 
+.citation{
+    margin-top: 1rem;
+    font-size: 12px;
+}
+
 ol{
     margin: 0;
     padding-left: 6.15%;
