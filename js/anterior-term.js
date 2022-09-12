@@ -20,7 +20,7 @@ function inputText(arr1,arr2,href,rule){
     textArr.push(`<div style="font-weight:500;">User Input</div>`);
     for(let i = 0; i < arr1.length; i++){
 
-        let line = `<div class="user-input" style="font-weight:400"><span class="user-input-href">${arr1[i]}</span>: <span class="user-input-ans">${arr2[i]}</span></div>`
+        let line = `<div class="user-input" style="font-weight:400"><span class="user-input-href"><a href="${href[i]}">${arr1[i]}</a></span>: <span class="user-input-ans">${arr2[i]}</span></div>`
         textArr.push(line);
     }
     textArr.push(`</div>`);

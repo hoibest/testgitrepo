@@ -182,10 +182,16 @@
     margin-bottom: 2rem;
 }
 
-.user-input-href{
+.user-input-href > a{
     text-decoration: underline;
     text-decoration-style: dotted;
+    color: black;
 }
+
+.user-input-href > a:hover{
+    color: #747070;;
+}
+
 
 .user-input-ans{
     background-color: #FADCD6;
