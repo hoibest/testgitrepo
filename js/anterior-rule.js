@@ -42,6 +42,7 @@ let fusList = new ruleList();
 let jiacauList = new ruleList();
 let sauList = new ruleList();
 let tinuList = new ruleList();
+//let syphauList = new ruleList();
 
 function cmvauRuleOne(){
     let rule = 'cmvau #1';
@@ -740,6 +741,44 @@ function tinuDiagnosis(){
     }
 }
 
+/*function syphauRuleOne (){
+    let rule = 'syphau #1';
+    let disList = syphauList;
+    let a = IDK; 
+    a = numIs(ANT_CHAMBER_CELLS);
+    if(a==FALSE){
+        disList.outList.push(rule);
+    }
+    else if(a==TRUE){
+        disList.inList.push(rule);
+    }
+    else{
+        disList.checkList.push(rule);
+    }
+}
+
+function syphauRuleTwo (){
+    let rule = 'syphau #2';
+    let disList = syphauList;
+    let a = IDK;
+    a = is(TREP_PALL,"yes");
+}
+
+function syphauDiagnosis(){
+    let disList = syphauList;
+    syphauRuleOne();
+    syphauRuleTwo();
+    if(disList.outList.includes('syphau #1')||disList.outList.includes('syphau #2')){
+        exList.push('syphau');
+    }
+    else if(disList.inList.includes('syphau #1')&&disList.inList.includes('syphau #2')){
+        dxList.push('SHYPU');
+    }
+    else{
+        possList.push('SHYPU');
+    }
+}*/
+
 function antDiagnosis(){
     cmvauDiagnosis();
     hsauDiagnosis();
@@ -748,6 +787,7 @@ function antDiagnosis(){
     jiacauDiagnosis();
     sauDiagnosis();
     tinuDiagnosis();
+    //syphauDiagnosis();
 
     console.log(`dxList: ${dxList}
 possList: ${possList}

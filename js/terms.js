@@ -33,6 +33,7 @@ const SPONDYLO_ARTH = p.pathologyObj.spondyloArth;
 const POS_PCR_CMV = p.labObj.posPcrCmv;
 const POS_PCR_HSV = p.labObj.posPcrHsv;
 const POS_PCR_VZV = p.labObj.posPcrVzv;
+const TREP_PALL = p.labObj.trepPall;
 const POS_HLA_B27 = p.labObj.posHlaB27;
 const POS_RENAL_BIOPSY = p.labObj.posRenalBiopsy;
 const EL_URINE_BM = p.labObj.elUrineBM;

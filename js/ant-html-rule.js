@@ -46,7 +46,30 @@ const tinuEx =
 <li>Evidence of sarcoidosis (either bilateral hilar adenopathy on chest imaging or tissue biopsy demonstrating non-caseating granulomata)</li>
 </ul>`
 
+///////////////////////////////////////other anterior uveitis
+const syphauEx = 
+`<ul>
+<li>History of adequate treatment for syphilitic uveitis</li>
+</ul>`
 
+const tauEx = 
+`<ul>
+<li>Positive serology for syphilis using a treponemal test</li>
+<li>Positive biopsy for sarcoidosis (and therefore an absence of histological or microbiologic confirmation of infection with M. tuberculosis)</li>
+<li>Uveitic syndrome compatible with either sarcoidosis-associated uveitis or tubercular uveitis and bilateral hilar adenopathy on chest imaging without histological or microbiologic confirmation of the diagnosis of infection with M. tuberculosis</li>
+</ul>`
+
+const bdauEx = 
+`<ul>
+<li>Positive serology for syphilis using a treponemal test</li>
+<li>Evidence of sarcoidosis (either bilateral hilar adenopathy on chest imaging or tissue biopsy demonstrating non-caseating granulomata)</li>
+</ul>`
+
+const sarcauEx = 
+`<ul>
+<li>Positive serology for syphilis using a treponemal test</li>
+<li>Evidence of infection with Mycobacterium tuberculosis</li>
+</ul>`
 ////////////////////////////////////////
 
 const cmvauRule_1_html = 
@@ -173,3 +196,8 @@ const tinuRule_2_html =
     <li>Positive renal biopsy OR</li>
     <li>Elevated urine β-microglobulin and either abnormal urine analysis or elevated serum creatinine</li>
 </ol>`;
+
+////////////////////////////////////////////
+
+
+////////////////////////////////////////////

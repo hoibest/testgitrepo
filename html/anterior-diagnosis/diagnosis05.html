@@ -71,7 +71,6 @@
                     </div>
                 </div>
                 <!----------------------------------------------------->
-                <!----------------------------------------------------->
                 <div class="row2-content">
                     <div class="symptom">HLA-B27</div>
                     <div class="input">
@@ -136,6 +135,45 @@
                     </div>
                 </div>
                 <!----------------------------------------------------->
+                <div class="row2-content">
+                    <div class="symptom">Evidence of Treponema pallidum</div>
+                    <div class="input">
+                        <select id="trepPall-el" onchange="keepData(this)">
+                            <option value="">Select</option>
+                            <option value="yes">Positive</option>
+                            <option value="no">Negative</option>
+                            <option value="Don't know">Don't know</option>
+                        </select>
+                    </div>
+                </div>
+                <!----------------------------------------------------->
+                <!----------------------------------------------------->
+                <div class="row2-content">
+                    <div class="symptom">Evidence of Mycobacterium tuberculosis</div>
+                    <div class="input">
+                        <select id="tb-el" onchange="keepData(this)">
+                            <option value="">Select</option>
+                            <option value="yes">Positive</option>
+                            <option value="no">Negative</option>
+                            <option value="Don't know">Don't know</option>
+                        </select>
+                    </div>
+                </div>
+                <!----------------------------------------------------->
+                <!----------------------------------------------------->
+                <div class="row2-content">
+                    <div class="symptom">Evidence of sarcoidosis</div>
+                    <div class="input">
+                        <select id="sarcoidosis-el" onchange="keepData(this)">
+                            <option value="">Select</option>
+                            <option value="yes">Positive</option>
+                            <option value="no">Negative</option>
+                             <option value="Don't know">Don't know</option>
+                        </select>
+                    </div>
+                </div>
+                <!----------------------------------------------------->
+                <!----------------------------------------------------->
             </div>
             <div class="row3">
                 <div class="backNext">
@@ -156,7 +194,8 @@
         <script src="../../js/loading.js"></script>
         <script>
             let idList = ['posPcrCmv-el','posPcrHsv-el','posPcrVzv-el','posHlaB27-el',
-            'posRenalBiopsy-el','elUrineBM-el','abUrineAn-el','elSerumCr-el']
+            'posRenalBiopsy-el','elUrineBM-el','abUrineAn-el','elSerumCr-el'
+            ,'trepPall-el','tb-el','sarcoidosis-el']
             loadData(idList);
             design(5);
         </script>

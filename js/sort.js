@@ -129,6 +129,25 @@ const tinu = {
     }
 }
 
+/*const syphu = {
+    link: "../classification/anterior/tinu.html",
+    disList : syphuList,
+    disRules : [tinuRule_1,tinuRule_2],
+    nameShort : 'SYPHU',
+    nameLong : 'Tubulointerstitial Nephritis with Uvieitis Syndrome',
+    inResult : [], outResult : [], checkResult : [],
+    ruleIn : function() {
+        ruleIn(this.disList,this,this.inResult);
+    },
+    ruleOut : function() {
+        ruleOut(this.disList,this,this.outResult);
+    },
+    ruleCheck : function() {
+        ruleCheck(this.disList,this,this.checkResult);
+    }
+}*/
+
+
 
 
 function ruleIn(disList,dis,inResult){

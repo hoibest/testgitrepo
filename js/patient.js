@@ -77,10 +77,12 @@ const labObj = {
     elUrineBM : DK,
     abUrineAn : DK,
     elSerumCr : DK,
+    trepPall : DK,
     update : function (){
         this.posPcrCmv = getSavedData('posPcrCmv-el');
         this.posPcrHsv = getSavedData('posPcrHsv-el');
         this.posPcrVzv = getSavedData('posPcrVzv-el');
+        this.trepPall = getSavedData('trepPall-el');
         this.posHlaB27 = getSavedData('posHlaB27-el');
         this.posRenalBiopsy = getSavedData('posRenalBiopsy-el');
         this.elUrineBM = getSavedData('elUrineBM-el');
