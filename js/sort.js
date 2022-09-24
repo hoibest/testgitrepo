@@ -129,12 +129,12 @@ const tinu = {
     }
 }
 
-/*const syphu = {
-    link: "../classification/anterior/tinu.html",
-    disList : syphuList,
-    disRules : [tinuRule_1,tinuRule_2],
-    nameShort : 'SYPHU',
-    nameLong : 'Tubulointerstitial Nephritis with Uvieitis Syndrome',
+const syphau = {
+    link: "../classification/Infectious Posterior and Panuveitides/syphu.html",
+    disList : syphauList,
+    disRules : [syphauRule_1,syphauRule_2],
+    nameShort : 'SYPHAU',
+    nameLong : 'Syphilitic (Anterior) Uveitis',
     inResult : [], outResult : [], checkResult : [],
     ruleIn : function() {
         ruleIn(this.disList,this,this.inResult);
@@ -145,7 +145,43 @@ const tinu = {
     ruleCheck : function() {
         ruleCheck(this.disList,this,this.checkResult);
     }
-}*/
+}
+
+const tbau = {
+    link: "../classification/Infectious Posterior and Panuveitides/tbu.html",
+    disList : tbauList,
+    disRules : [tbauRule_1,tbauRule_2],
+    nameShort : 'TBAU',
+    nameLong : 'Tubercular (Anterior) Uveitis',
+    inResult : [], outResult : [], checkResult : [],
+    ruleIn : function() {
+        ruleIn(this.disList,this,this.inResult);
+    },
+    ruleOut : function() {
+        ruleOut(this.disList,this,this.outResult);
+    },
+    ruleCheck : function() {
+        ruleCheck(this.disList,this,this.checkResult);
+    }
+}
+
+const sarcau = {
+    link: "../classification/panuveitis/sarcu.html",
+    disList : sarcauList,
+    disRules : [sarcauRule_1,sarcauRule_2],
+    nameShort : 'SARCAU',
+    nameLong : 'Sarcoid (Anterior) Uveitis',
+    inResult : [], outResult : [], checkResult : [],
+    ruleIn : function() {
+        ruleIn(this.disList,this,this.inResult);
+    },
+    ruleOut : function() {
+        ruleOut(this.disList,this,this.outResult);
+    },
+    ruleCheck : function() {
+        ruleCheck(this.disList,this,this.checkResult);
+    }
+}
 
 
 
@@ -197,7 +233,7 @@ function ruleCheck(disList,dis,checkResult){
 
 
 
-antUveitisList = [cmvau,hsau,vzvau,fus,jiacau,shau,tinu]
+antUveitisList = [cmvau,hsau,vzvau,fus,jiacau,shau,tinu,sarcau,syphau,tbau]
 for(let i = 0; i < antUveitisList.length; i++){
     antUveitisList[i].ruleIn();
     antUveitisList[i].ruleOut();

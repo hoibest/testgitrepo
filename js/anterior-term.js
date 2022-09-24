@@ -261,6 +261,75 @@ const tinuRule_2 = {
     }
 }
 
+////////////////////////////////////////
+const sarcauRule_1 = {
+    ruleName : "sarcau #1",
+    rule : sarcauRule_1_html,
+    variableNames: [`Anterior chamber cells`],
+    variableValues: [ANT_CHAMBER_CELLS],
+    href:[html_2],
+    userInput : function() {
+        return inputText(this.variableNames,this.variableValues,this.href,this.rule);
+    }
+}
+
+const sarcauRule_2 = {
+    ruleName : "sarcau #2",
+    rule : sarcauRule_2_html,
+    variableNames: [`Sarcoidosis`],
+    variableValues: [SARCOIDOSIS],
+    href: [html_5],
+    userInput : function() {
+        return inputText(this.variableNames,this.variableValues,this.href,this.rule);
+    }
+}
+
+const syphauRule_1 = {
+    ruleName : "syphau #1",
+    rule : syphauRule_1_html,
+    variableNames: [`Anterior chamber cells`],
+    variableValues: [ANT_CHAMBER_CELLS],
+    href:[html_2],
+    userInput : function() {
+        return inputText(this.variableNames,this.variableValues,this.href,this.rule);
+    }
+}
+
+const syphauRule_2 = {
+    ruleName : "syphau #2",
+    rule : syphauRule_2_html,
+    variableNames: [`Treponema pallidum`],
+    variableValues: [TREP_PALL],
+    href: [html_5],
+    userInput : function() {
+        return inputText(this.variableNames,this.variableValues,this.href,this.rule);
+    }
+}
+
+const tbauRule_1 = {
+    ruleName : "tbau #1",
+    rule : tbauRule_1_html,
+    variableNames: [`Anterior chamber cells`,`Iris nodules`],
+    variableValues: [ANT_CHAMBER_CELLS,IRIS_NODULES],
+    href:[html_2,html_2],
+    userInput : function() {
+        return inputText(this.variableNames,this.variableValues,this.href,this.rule);
+    }
+}
+
+const tbauRule_2 = {
+    ruleName : "tbau #2",
+    rule : tbauRule_2_html,
+    variableNames: [`M. tuberculosis`],
+    variableValues: [TB],
+    href: [html_5],
+    userInput : function() {
+        return inputText(this.variableNames,this.variableValues,this.href,this.rule);
+    }
+}
+
+///////////////////////////////////////
+
 
 
 

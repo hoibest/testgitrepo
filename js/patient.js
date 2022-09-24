@@ -78,6 +78,8 @@ const labObj = {
     abUrineAn : DK,
     elSerumCr : DK,
     trepPall : DK,
+    sarcoidosis : DK,
+    tb : DK,
     update : function (){
         this.posPcrCmv = getSavedData('posPcrCmv-el');
         this.posPcrHsv = getSavedData('posPcrHsv-el');
@@ -88,6 +90,8 @@ const labObj = {
         this.elUrineBM = getSavedData('elUrineBM-el');
         this.abUrineAn = getSavedData('abUrineAn-el');
         this.elSerumCr = getSavedData('elSerumCr-el');
+        this.sarcoidosis = getSavedData('sarcoidosis-el');
+        this.tb = getSavedData('tb-el');
     }
 }
 

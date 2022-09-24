@@ -39,3 +39,5 @@ const POS_RENAL_BIOPSY = p.labObj.posRenalBiopsy;
 const EL_URINE_BM = p.labObj.elUrineBM;
 const AB_URINE_AN = p.labObj.abUrineAn;
 const EL_SERUM_CR = p.labObj.elSerumCr;
+const SARCOIDOSIS = p.labObj.sarcoidosis;
+const TB = p.labObj.tb;

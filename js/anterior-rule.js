@@ -42,7 +42,9 @@ let fusList = new ruleList();
 let jiacauList = new ruleList();
 let sauList = new ruleList();
 let tinuList = new ruleList();
-//let syphauList = new ruleList();
+let sarcauList = new ruleList();
+let tbauList = new ruleList();
+let syphauList = new ruleList();
 
 function cmvauRuleOne(){
     let rule = 'cmvau #1';
@@ -741,7 +743,7 @@ function tinuDiagnosis(){
     }
 }
 
-/*function syphauRuleOne (){
+function syphauRuleOne (){
     let rule = 'syphau #1';
     let disList = syphauList;
     let a = IDK; 
@@ -762,6 +764,16 @@ function syphauRuleTwo (){
     let disList = syphauList;
     let a = IDK;
     a = is(TREP_PALL,"yes");
+    //I need to do 'hover' or other stuff to let user know requirements for evidence of syphilis
+    if(a==FALSE){
+        disList.outList.push(rule);
+    }
+    else if(a==TRUE){
+        disList.inList.push(rule);
+    }
+    else{
+        disList.checkList.push(rule);
+    }
 }
 
 function syphauDiagnosis(){
@@ -769,15 +781,112 @@ function syphauDiagnosis(){
     syphauRuleOne();
     syphauRuleTwo();
     if(disList.outList.includes('syphau #1')||disList.outList.includes('syphau #2')){
-        exList.push('syphau');
+        exList.push('SYPHAU');
     }
     else if(disList.inList.includes('syphau #1')&&disList.inList.includes('syphau #2')){
-        dxList.push('SHYPU');
+        dxList.push('SYPHYAU');
     }
     else{
-        possList.push('SHYPU');
+        possList.push('SYPHAU');
     }
-}*/
+}
+
+function tbauRuleOne (){
+    let rule = 'tbau #1';
+    let disList = tbauList;
+    let a = IDK; let b = IDK;
+    a = numIs(ANT_CHAMBER_CELLS);
+    b = is(IRIS_NODULES,"yes");
+    if(a==FALSE||b==FALSE){
+        disList.outList.push(rule);
+    }
+    else if(a==TRUE&&b==TRUE){
+        disList.inList.push(rule);
+    }
+    else{
+        disList.checkList.push(rule);
+    }
+}
+
+function tbauRuleTwo (){
+    let rule = 'tbau #2';
+    let disList = tbauList;
+    let a = IDK;
+    a = is(TB,"yes");
+    //I need to do 'hover' or other stuff to let user know requirements for evidence of tuberculosis
+    if(a==FALSE){
+        disList.outList.push(rule);
+    }
+    else if(a==TRUE){
+        disList.inList.push(rule);
+    }
+    else{
+        disList.checkList.push(rule);
+    }
+}
+
+function tbauDiagnosis(){
+    let disList = tbauList;
+    tbauRuleOne();
+    tbauRuleTwo();
+    if(disList.outList.includes('tbau #1')||disList.outList.includes('tbau #2')){
+        exList.push('SARCAU');
+    }
+    else if(disList.inList.includes('tbau #1')&&disList.inList.includes('tbau #2')){
+        dxList.push('TBAU');
+    }
+    else{
+        possList.push('TBAU');
+    }
+}
+
+function sarcauRuleOne (){
+    let rule = 'sarcau #1';
+    let disList = sarcauList;
+    let a = IDK; 
+    a = numIs(ANT_CHAMBER_CELLS);
+    if(a==FALSE){
+        disList.outList.push(rule);
+    }
+    else if(a==TRUE){
+        disList.inList.push(rule);
+    }
+    else{
+        disList.checkList.push(rule);
+    }
+}
+
+function sarcauRuleTwo (){
+    let rule = 'sarcau #2';
+    let disList = sarcauList;
+    let a = IDK;
+    a = is(SARCOIDOSIS,"yes");
+    //I need to do 'hover' or other stuff to let user know requirements for evidence of sarcoidosis
+    if(a==FALSE){
+        disList.outList.push(rule);
+    }
+    else if(a==TRUE){
+        disList.inList.push(rule);
+    }
+    else{
+        disList.checkList.push(rule);
+    }
+}
+
+function sarcauDiagnosis(){
+    let disList = sarcauList;
+    sarcauRuleOne();
+    sarcauRuleTwo();
+    if(disList.outList.includes('sarcau #1')||disList.outList.includes('sarcau #2')){
+        exList.push('SARCAU');
+    }
+    else if(disList.inList.includes('sarcau #1')&&disList.inList.includes('sarcau #2')){
+        dxList.push('SARCAU');
+    }
+    else{
+        possList.push('SARCAU');
+    }
+}
 
 function antDiagnosis(){
     cmvauDiagnosis();
@@ -787,7 +896,9 @@ function antDiagnosis(){
     jiacauDiagnosis();
     sauDiagnosis();
     tinuDiagnosis();
-    //syphauDiagnosis();
+    syphauDiagnosis();
+    sarcauDiagnosis();
+    tbauDiagnosis();
 
     console.log(`dxList: ${dxList}
 possList: ${possList}

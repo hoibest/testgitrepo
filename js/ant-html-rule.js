@@ -52,7 +52,7 @@ const syphauEx =
 <li>History of adequate treatment for syphilitic uveitis</li>
 </ul>`
 
-const tauEx = 
+const tbauEx = 
 `<ul>
 <li>Positive serology for syphilis using a treponemal test</li>
 <li>Positive biopsy for sarcoidosis (and therefore an absence of histological or microbiologic confirmation of infection with M. tuberculosis)</li>
@@ -198,6 +198,59 @@ const tinuRule_2_html =
 </ol>`;
 
 ////////////////////////////////////////////
+const sarcauRule_1_html =
+`<span style="font-weight:500">Compatible uveitic picture, either</span>
+<ol type="a" style="font-weight:400;">
+    <li>Anterior uveitis OR</li>
+    <li>Intermediate or anterior/intermediate uveitis  OR</li>
+    <li>Posterior uveitis with either choroiditis (paucifocal choroidal nodule(s) or multifocal choroiditis) OR</li>
+    <li>Panuveitis with choroiditis or retinal vascular sheathing or retinal vascular occlusion</li>
+</ol>`;
 
+const sarcauRule_2_html =
+`<span style="font-weight:500">Evidence of sarcoidosis, either</span>
+<ol type="a" style="font-weight:400;">
+    <li>Tissue biopsy demonstrating non-caseating granulomata OR</li>
+    <li>Bilateral hilar adenopathy on chest imaging</li>
+</ol>`;
+
+const syphauRule_1_html = 
+`<span style="font-weight:500">Uveitis with a compatible uveitic presentation, including</span>
+<ol type="a" style="font-weight:400;">
+    <li>Anterior uveitis OR</li>
+    <li>Intermediate uveitis or anterior/intermediate uveitis OR</li>
+    <li>Posterior or panuveitis with one of the following presentations</li>
+    <ol type="i" style="font-weight:400;">
+        <li>Placoid inflammation of the retinal pigment epithelium or</li>
+        <li>Multifocal inflammation of the retina/retinal pigment epithelium or</li>
+        <li>Necrotizing retinitis or</li>
+        <li>Retinal vasculitis</li>
+    </ol>
+</ol>`;
+
+const syphauRule_2_html = 
+`<span style="font-weight:500">Evidence of infection with Treponema pallidum, either</span>
+<ol type="a" style="font-weight:400;">
+    <li>Positive treponemal test and non-treponemal test OR</li>
+    <li>Positive treponemal test with two different treponemal tests</li>
+</ol>`;
+
+const tbauRule_1_html = 
+`<span style="font-weight:500">Evidence of a tubercular uveitis compatible uveitic syndrome</span>
+<ol type="a" style="font-weight:400;">
+    <li>Anterior uveitis with iris nodules</li>
+    <li>Serpiginous-like tubercular choroiditis</li>
+    <li>Choroidal nodule (i.e. tuberculoma)</li>
+    <li>In individuals with active systemic tuberculosis, multifocal choroiditis</li>
+    <li>Occlusive retinal vasculitis</li>
+</ol>`;
+
+const tbauRule_2_html = 
+`<span style="font-weight:500">Evidence of infection with Mycobacterium tuberculosis, either</span>
+<ol type="a" style="font-weight:400;">
+    <li>Histologically- or microscopically-confirmed infection with M. tuberculosis* OR</li>
+    <li>Positive interferon-γ release assay (IGRA) OR</li>
+    <li>Positive tuberculin skin test</li>
+</ol>`;
 
 ////////////////////////////////////////////
