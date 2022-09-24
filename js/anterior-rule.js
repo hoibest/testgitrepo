@@ -830,7 +830,7 @@ function tbauDiagnosis(){
     tbauRuleOne();
     tbauRuleTwo();
     if(disList.outList.includes('tbau #1')||disList.outList.includes('tbau #2')){
-        exList.push('SARCAU');
+        exList.push('TBAU');
     }
     else if(disList.inList.includes('tbau #1')&&disList.inList.includes('tbau #2')){
         dxList.push('TBAU');

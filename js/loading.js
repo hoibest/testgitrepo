@@ -43,3 +43,19 @@ function design(num){
         document.getElementById('nav-greenbar').style.borderRadius = 5+'px';
     }
 }
+
+function goToHome(warn){
+    if(warn==1){
+        let text = 
+        `
+Leave page?
+Changes that you made will not be saved`;
+        if (confirm(text) == true) {
+            sessionStorage.clear();
+            goToPage('/')
+        }     
+    }
+    else{
+        goToPage('/')
+    }
+}
