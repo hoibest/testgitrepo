@@ -132,4 +132,7 @@ footer{
     #hide-print, #hide-print *{
         display: none;
     }
+    #exclusion-box, #exclusion-box *{
+        background-color: #FFFFFF;
+    }
 }
