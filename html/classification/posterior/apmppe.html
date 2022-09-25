@@ -43,6 +43,9 @@
                         <li>Evidence of sarcoidosis (either bilateral hilar adenopathy on chest imaging or tissue biopsy demonstrating non-caseating granulomata)</li>
                     </ul>
                 </div>
+                <div id="hide-print" style="margin-top: 1rem;">
+                    <button id="print">print</button>
+                </div>
             </div>
         </div>
 
@@ -56,6 +59,10 @@
             function goToPage(url){
                 window.location = url;
             }
+            const printBtn = document.getElementById('print');
+            printBtn.addEventListener('click',function(){
+                print();
+            })
         </script>
     </body>
 </html>

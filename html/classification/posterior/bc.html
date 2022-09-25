@@ -60,6 +60,9 @@
                         <li>Evidence of intraocular lymphoma on diagnostic vitrectomy or tissue biopsy</li>
                     </ul>
                 </div>
+                <div id="hide-print" style="margin-top: 1rem;">
+                    <button id="print">print</button>
+                </div>
             </div>
         </div>
 
@@ -73,6 +76,10 @@
             function goToPage(url){
                 window.location = url;
             }
+            const printBtn = document.getElementById('print');
+            printBtn.addEventListener('click',function(){
+                print();
+            })
         </script>
     </body>
 </html>

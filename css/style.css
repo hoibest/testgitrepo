@@ -121,3 +121,15 @@ footer{
     font-family: 'Poppins',sans-serif;
     font-size: 0.8rem;
 }
+
+@media print{
+    header * {
+        display: none;
+    }
+    footer * {
+        display: none;
+    }
+    #hide-print{
+        display: none;
+    }
+}
