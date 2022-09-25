@@ -123,13 +123,13 @@ footer{
 }
 
 @media print{
-    header * {
+    header,header * {
         display: none;
     }
-    footer * {
+    footer, footer *{
         display: none;
     }
-    #hide-print{
+    #hide-print, #hide-print *{
         display: none;
     }
 }
