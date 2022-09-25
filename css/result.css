@@ -269,3 +269,33 @@ ul{
     padding-right: 0;
     padding-left: 6.15%;
 }
+
+@media print{
+    header,header * {
+        display: none;
+    }
+    footer, footer *{
+        display: none;
+    }
+    #hide-print, #hide-print *{
+        display: none;
+    }
+    #hide-row3, #hide-row3 *{
+        display: none;
+    }
+    #nav, #nav *{
+        display:none;
+    }
+    #main-container, #main-container * {
+        background-color: #FFFFFF;
+    }
+    #hide-subtitle {
+        display:none;
+    }
+    #hide-criteria-link{
+        display:none;
+    }
+    .comp3, .comp3 *{
+        display:none;
+    }
+}

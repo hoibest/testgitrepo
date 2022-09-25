@@ -14,7 +14,7 @@
                 Uveitis
             </div>
         </header>
-        <div class="nav">
+        <div class="nav" id="nav">
             <div class="nav-content-wrapper">
                 <div class="nav-text-content" id="nav-text-content">
                     6/6 Result
@@ -26,10 +26,10 @@
         </div>
 
 
-        <div class="diagnosis-container">
+        <div class="diagnosis-container" id="main-container">
             <div class="row1">
                 <div>
-                <div class="row1-subtitle">Please click and see details for each uveitis</div>
+                <div class="row1-subtitle" id="hide-subtitle">Please click and see details for each uveitis</div>
                 <div class="row1-title">Result</div>
                 </div>
             </div>
@@ -94,14 +94,17 @@
                 <div id="e-uveitides"></div>
                 
             </div>
+            
+        </div>
+
+        <div id="hide-print" style="margin-top: 1rem; margin-left: 6.15%;margin-bottom: 1rem;">
+            <button id="print" style="padding: 0.3rem 0.7rem;" onclick="print_out();">print</button>
         </div>
 
 
 
 
-
-
-        <div class="row3">
+        <div class="row3" id="hide-row3">
             <div class="backNext">
                 <div>
                     <a href="../anterior-diagnosis/diagnosis05.html"><button class="backButton" onclick="">Back</button></a>
@@ -148,7 +151,9 @@ Changes that you made will not be saved`;
             }
     </script>
     <script>
-
+        function print_out(){
+            print();
+        }
     </script>
 </body>
 </html>
