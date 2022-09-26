@@ -63,3 +63,12 @@ ul{
 #print{
     padding: 0.3rem 0.7rem;
 }
+
+@media print{
+    .class-title, .class-title *{
+        margin-top: 0rem;
+    }
+    .main, .main *{
+        margin-bottom: 0rem;
+    }
+}
