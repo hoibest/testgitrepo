@@ -69,7 +69,8 @@ ul{
         margin-top: 0rem;
     }
     .main, .main *{
-        margin: 0rem;
+        margin-top: 0rem;
+        margin-bottom: 0rem;
     }
 
 }
