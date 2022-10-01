@@ -182,9 +182,11 @@ select{
 }
 
 .modal-content{
-    font-size: 1rem;
+    font-size: 0.9rem;
+    font-weight: 300;
     margin-top: 1rem;
     margin-bottom: 2rem;
+    margin-right: 3%;
 }
 
 .image-container{
