@@ -24,7 +24,7 @@
                 </div>
             </div>
         </div>
-        <div class="diagnosis-container">
+        <div id="diagnosis-container" class="diagnosis-container">
             <div class="row1">
                 <div>
                 <div class="row1-subtitle">Please select the characteristics in each box below</div>
@@ -136,7 +136,7 @@
                 </div>
                 <!----------------------------------------------------->
                 <div class="row2-content">
-                    <div class="symptom">Evidence of Treponema pallidum</div>
+                    <div class="symptom click-content" onclick="popContent(this,'syphilis')">Evidence of Treponema pallidum</div>
                     <div class="input">
                         <select id="trepPall-el" onchange="keepData(this)">
                             <option value="">Select</option>
@@ -147,9 +147,24 @@
                     </div>
                 </div>
                 <!----------------------------------------------------->
+                <div id="syphilis-modal" class="modal">
+                    <div class="modal-wrapper">
+                        <div class="image-container">
+                            <div>
+                                <img id="syphilis-x" class="x" src="../../img/modal-x-icon.png" onclick="closeContent(`syphilis`)">
+                            </div>
+                        </div>  
+                        <div class="modal-content">
+                            <ul type="a">
+                                <li>Positive treponemal test and non-treponemal test OR</li>
+                                <li>Positive treponemal test with two different treponemal tests</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
                 <!----------------------------------------------------->
                 <div class="row2-content">
-                    <div class="symptom">Evidence of Mycobacterium tuberculosis</div>
+                    <div class="symptom click-content" onclick="popContent(this,'tb')">Evidence of M. tuberculosis</div>
                     <div class="input">
                         <select id="tb-el" onchange="keepData(this)">
                             <option value="">Select</option>
@@ -160,9 +175,25 @@
                     </div>
                 </div>
                 <!----------------------------------------------------->
+                <div id="tb-modal" class="modal">
+                    <div class="modal-wrapper">
+                        <div class="image-container">
+                            <div>
+                                <img id="tb-x" class="x" src="../../img/modal-x-icon.png" onclick="closeContent(`tb`)">
+                            </div>
+                        </div>
+                        <div class="modal-content">
+                            <ul type="a">
+                                <li>Histologically- or microbiologically-confirmed infection with M. tuberculosis OR</li>
+                                <li>Positive interferon-γ release assay (IGRA)† OR</li>
+                                <li>positive tuberculin skin test‡</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
                 <!----------------------------------------------------->
                 <div class="row2-content">
-                    <div class="symptom">Evidence of sarcoidosis</div>
+                    <div class="symptom click-content" onclick="popContent(this,'sarcoidosis')">Evidence of sarcoidosis</div>
                     <div class="input">
                         <select id="sarcoidosis-el" onchange="keepData(this)">
                             <option value="">Select</option>
@@ -173,6 +204,21 @@
                     </div>
                 </div>
                 <!----------------------------------------------------->
+                <div id="sarcoidosis-modal" class="modal">
+                    <div class="modal-wrapper">
+                        <div class="image-container">
+                            <div>
+                                <img id="sarcoidosis-x" class="x" src="../../img/modal-x-icon.png" onclick="closeContent(`sarcoidosis`)">
+                            </div>
+                        </div>
+                        <div class="modal-content">
+                            <ul type="a">
+                                <li>Tissue biopsy demonstrating non-caseating granulomata OR</li>
+                                <li>Bilateral hilar adenopathy on chest imaging</li>
+                            </ul>
+                        </div>
+                    </div>  
+                </div>
                 <!----------------------------------------------------->
             </div>
             <div class="row3">
@@ -198,6 +244,29 @@
             ,'trepPall-el','tb-el','sarcoidosis-el']
             loadData(idList);
             design(5);
+        </script>
+        <script>
+        </script>
+        <script>
+            let element = ``;
+            function popContent(el,dis){
+                element = el;
+                el.classList.toggle('active')
+                let content = el.classList.value;
+                console.log(content)
+                if(content == 'symptom click-content active'){
+                    document.getElementById(`${dis}-modal`).style.display = 'flex';
+                    document.getElementById("diagnosis-container").style.pointerEvents = 'none';
+                    document.getElementById(`${dis}-x`).style.pointerEvents = 'all';
+                }
+            }
+
+            function closeContent(dis){
+                element.classList.toggle('active');
+                document.getElementById(`${dis}-modal`).style.display = 'none';
+                document.getElementById("diagnosis-container").style.pointerEvents = 'all';
+                element = ``;
+            }
         </script>
     </body>
 </html>

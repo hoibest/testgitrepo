@@ -91,6 +91,12 @@
     }
 }
 
+@media only screen and (min-width: 600px){
+    .modal{
+        max-width: 800px;
+    }
+}
+
 .input{
     width: 40%;
     max-width: 300px;
@@ -146,4 +152,54 @@ select{
 
 .nextButton:hover{
     background-color: #7ea892;
+}
+
+.click-content{
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+}
+
+.click-content:hover{
+    color: #747070;
+    cursor: pointer;
+}
+
+.modal{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    display: none;
+    border: 2px solid black;
+    background-color: #e2e2e2;
+}
+
+.modal-wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-content{
+    font-size: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.image-container{
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: end;
+}
+
+.x{
+    height: 25px;
+    width: 25px;
+}
+
+ul{
+    margin: 0;
+    padding-left: 8%;
 }
