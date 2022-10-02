@@ -90,7 +90,7 @@ const hsauRule_1_html =
 `<span style="font-weight:500">Evidence of anterior uveitis</span>
 <ol type="a" style="font-weight:400;">
     <li>Anterior chamber cells</li>
-    <li>If anterior vitreous cells are present, severity is less than anterior chmaber inflammation</li>
+    <li>If anterior vitreous cells are present, severity is less than anterior chamber inflammation</li>
     <li>No evidence of retinitis</li>
 </ol>`;
 
@@ -109,7 +109,7 @@ const vzvauRule_1_html =
 `<span style="font-weight:500">Evidence of anterior uveitis</span>
 <ol type="a" style="font-weight:400;">
     <li>Anterior chamber cells</li>
-    <li>If anterior vitreous cells are present, severity is less than anterior chmaber inflammation</li>
+    <li>If anterior vitreous cells are present, severity is less than anterior chamber inflammation</li>
     <li>No evidence of retinitis</li>
 </ol>`;
 
@@ -149,7 +149,7 @@ const jiacauRule_1_html =
 `<span style="font-weight:500">Evidence of anterior uveitis</span>
 <ol type="a" style="font-weight:400;">
     <li>Anterior chamber cells</li>
-    <li>If anterior vitreous cells are present, severity is less than anterior chmaber inflammation</li>
+    <li>If anterior vitreous cells are present, severity is less than anterior chamber inflammation</li>
 </ol>`;
 
 const jiacauRule_2_html = 
@@ -167,7 +167,7 @@ const sauRule_1_html =
 `<span style="font-weight:500">Evidence of anterior uveitis</span>
 <ol type="a" style="font-weight:400;">
     <li>Anterior chamber cells</li>
-    <li>If anterior vitreous cells are present, severity is less than anterior chmaber inflammation</li>
+    <li>If anterior vitreous cells are present, severity is less than anterior chamber inflammation</li>
 </ol>`;
 
 const sauRule_2_html = 
