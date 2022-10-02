@@ -8,7 +8,7 @@ header{
 }
 
 .header-content{
-    width : 87.7%;
+    width : fit-content;
     margin-left: 6.15%;
     font-size: 1.25rem;
     font-weight: 700;
@@ -16,6 +16,12 @@ header{
     padding-bottom: 60px;
     color: #FFFFFF;
 }
+
+.header-icon{
+    cursor: pointer;
+}
+
+
 
 .main{
     width : 87.7%;

@@ -11,7 +11,7 @@
     <body>
         <header>
             <div class="header-content">
-                Uveitis
+                <div class="header-icon" onclick="warning()">Uveitis</div>
             </div>
         </header>
         <div class="nav">
@@ -133,18 +133,16 @@
             design(1);
         </script>
         <script>
-             function warning(){
-                let text = 
-                `
-Leave page?
-Changes that you made will not be saved`;
-                if (confirm(text) == true) {
-                    sessionStorage.clear();
-                    goToPage('../select-location.html')
-                } else {
-                    document.getElementById("diagnosis1").setAttribute("href","");
+        function warning(){
+                    let text = 
+                    `
+    Finish classification?
+    Changes that you made will not be saved`;
+                    if (confirm(text) == true) {
+                        sessionStorage.clear();
+                        goToPage('../../index.html')
+                    }
                 }
-            }
         </script>
     </body>
 </html>
