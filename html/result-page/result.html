@@ -11,7 +11,7 @@
     <body>
         <header>
             <div class="header-content">
-                Uveitis
+                <div class="header-icon" onclick="warning()">Uveitis</div>
             </div>
         </header>
         <div class="nav" id="nav">
@@ -87,18 +87,15 @@
     </script>
     <script>
         function warning(){
-                let text = 
-                `
+                    let text = 
+                    `
 Finish classification?
 Changes that you made will not be saved`;
-                if (confirm(text) == true) {
-                    sessionStorage.clear();
-                    goToPage('../select-location.html')
+                    if (confirm(text) == true) {
+                        sessionStorage.clear();
+                        goToPage('../../index.html')
+                    }
                 }
-                else{
-                    document.getElementById("finish").setAttribute("href","");
-                }
-            }
     </script>
     <script>
         function print_out(){
