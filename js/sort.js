@@ -241,11 +241,43 @@ for(let i = 0; i < antUveitisList.length; i++){
 }
 
 
+function ruleIcon(dis){
+    let ruleIconHtml = [];
+    for(let i = 0; i < dis.disRules.length; i++){
+        let rn = dis.disRules[i].ruleName;
+        console.log(rn)
+        if(dis.disList.inList.includes(rn)){
+            ruleIconHtml.push(
+            `<div>
+                <img class='rule-icon' src='../../img/green-check-icon.png'>
+            </div>`)
+        }
+        else if(dis.disList.outList.includes(rn)){
+            ruleIconHtml.push(
+            `<div>
+                <img class='rule-icon' src='../../img/incorrect-icon.png'>
+            </div>`)
+        }
+        else if(dis.disList.checkList.includes(rn)){
+            ruleIconHtml.push(
+            `<div>
+                <img class='rule-icon' src='../../img/check-icon.png'>
+            </div>`)
+        }
+    }
+    ruleIconHtml = ruleIconHtml.join("");
+    return ruleIconHtml;
+}
+
 function createBtn(dis,type){
+    let comp4Html = ruleIcon(dis);
     let btnHtml = 
     `<div class="content" id="${dis.nameShort}" onclick="showModal(this)">
         <div class=${type}></div>
         <div class='comp2'>${dis.nameLong}</div>
+        <div class='comp4'>
+            ${comp4Html}
+        </div>
         <div class='comp3' id="comp3-${dis.nameShort}"><img src='../../img/dropdown-icon.png'></div>
     </div>
     <div class="show-result" id="show-result-${dis.nameShort}">
@@ -309,7 +341,7 @@ if(dxList.length==0){
                     <div style="font-size:16px;font-weight:400;">${undifferentiated}</div>
                     <br>
                     <div style="font-size:12px;font-weight:400; margin-bottom: 2rem;">
-                        
+
                         Anterior chamber cells: ${ANT_CHAMBER_CELLS}<br>
                         Vitreous cells: ${VIT_CELLS}<br>
                         Choroiditis: ${CHOROIDITIS}<br>

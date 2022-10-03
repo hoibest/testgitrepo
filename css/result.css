@@ -112,14 +112,34 @@
 }
 
 .content > .comp2 {
-    width: 75%;
+    width: 65%;
     height: fit-content;
-    padding-left: 1.5rem;
+    padding-left: 1rem;
     font-size: 14px;
 }
 
+.comp4{
+    width: 19.15%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.rule-icon{
+    width: 16px;
+    height: 16px;
+}
+
+@media only screen and (min-width: 600px){
+    .rule-icon{
+        width: 24px;
+        height: 24px;
+    }
+}
+
+
 .content > .comp3 {
-    width: 18.75%;
+    width: 9.5%;
     display: flex;
     justify-content: center;
 }
