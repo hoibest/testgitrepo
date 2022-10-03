@@ -11,7 +11,7 @@
     <body>
         <header>
             <div class="header-content">
-                <div class="header-icon" onclick="goToPage('../../../index.html')">Uveitis</div>
+                <div class="header-icon" onclick="warning()">Uveitis</div>
             </div>
         </header>
 
@@ -76,6 +76,23 @@
             printBtn.addEventListener('click',function(){
                 print();
             })
+        </script>
+        <script>
+            function warning(){
+                if(sessionStorage.length<=1){
+                    goToPage('../../../index.html')
+                }
+                else{
+                    let text = 
+                    `
+Finish classification?
+Changes that you made will not be saved`;
+                    if (confirm(text) == true) {
+                        sessionStorage.clear();
+                        goToPage('../../../index.html')
+                    }
+                }
+            }
         </script>
     </body>
 </html>
