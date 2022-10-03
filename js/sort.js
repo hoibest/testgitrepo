@@ -334,6 +334,7 @@ if(dxList.length==0){
             `<div class="content" id="undifferentiated" onclick="showModal(this)">
                 <div class="c-comp1"></div>
                 <div class='comp2'>Undifferentiated anterior uveitis</div>
+                <div class='comp4'></div>
                 <div class='comp3' id="comp3-undifferentiated"><img src='../../img/dropdown-icon.png'></div>
             </div>
             <div class="show-result" id="show-result-undifferentiated">
