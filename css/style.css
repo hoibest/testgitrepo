@@ -119,19 +119,8 @@ footer{
     align-items: end;
 }
 
-@media only screen and (max-width: 600px){
-    .footer-content {
-        display: none;
-    }
-}
-
 .footer-content{
-    width : 87.7%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 2rem;
-    font-family: 'Poppins',sans-serif;
-    font-size: 0.8rem;
+    display: none;
 }
 
 @media print{
