@@ -113,10 +113,16 @@ header{
 }
 
 footer{
-    background: #828181;
+    background: #969696;
     min-height: 160px;
     display: flex;
     align-items: end;
+}
+
+@media only screen and (max-width: 600px){
+    .footer-content {
+        display: none;
+    }
 }
 
 .footer-content{
