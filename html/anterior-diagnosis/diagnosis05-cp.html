@@ -1,0 +1,284 @@
+<html>
+    <head>
+        <meta content="initial-scale=1.0, width=device-width" name="viewport">
+        <meta name="theme-color" content="#F3C1B6">
+        <link rel="stylesheet" href="../../css/style.css">
+        <link rel="stylesheet" href="../../css/diagnosis.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="header-content">
+                <div class="header-icon" onclick="warning()">Uveitis</div>
+            </div>
+        </header>
+        <div class="nav">
+            <div class="nav-content-wrapper">
+                <div class="nav-text-content" id="nav-text-content">
+                    5/6 Labs
+                </div>
+                <div class="nav-bar-content">
+                    <div id="nav-greenbar" class="nav-greenbar"></div>
+                </div>
+            </div>
+        </div>
+        <div id="diagnosis-container" class="diagnosis-container">
+            <div class="row1">
+                <div>
+                <div class="row1-subtitle">Please select the characteristics in each box below</div>
+                <div class="row1-title">Labs</div>
+                </div>
+            </div>
+            <div class="row2">
+                <!----------------------------------------------------->
+                <div class="row2-content">
+                    <div class="symptom"><div>PCR Cytomegalovirus</div></div>
+                    <div class="input">
+                        <select id="posPcrCmv-el" onchange="keepData(this)">
+                            <option value="">Select</option>
+                            <option value="yes">Positive</option>
+                            <option value="no">Negative</option>
+                            <option value="Don't know">Don't know</option>
+                        </select>
+                    </div>
+                </div>
+                <!----------------------------------------------------->
+                <!----------------------------------------------------->
+                <div class="row2-content">
+                    <div class="symptom"><div>PCR Herpes simplex virus</div></div>
+                    <div class="input">
+                        <select id="posPcrHsv-el" onchange="keepData(this)">
+                            <option value="">Select</option>
+                            <option value="yes">Positive</option>
+                            <option value="no">Negative</option>
+                            <option value="Don't know">Don't know</option>
+                        </select>
+                    </div>
+                </div>
+                <!----------------------------------------------------->
+                <!----------------------------------------------------->
+                <div class="row2-content">
+                    <div class="symptom">PCR Varicella zoster virus</div>
+                    <div class="input">
+                        <select id="posPcrVzv-el" onchange="keepData(this)">
+                            <option value="">Select</option>
+                            <option value="yes">Positive</option>
+                            <option value="no">Negative</option>
+                            <option value="Don't know">Don't know</option>
+                        </select>
+                    </div>
+                </div>
+                <!----------------------------------------------------->
+                <div class="row2-content">
+                    <div class="symptom">HLA-B27</div>
+                    <div class="input">
+                        <select id="posHlaB27-el" onchange="keepData(this)">
+                            <option value="">Select</option>
+                            <option value="yes">Positive</option>
+                            <option value="no">Negative</option>
+                            <option value="Don't know">Don't know</option>
+                        </select>
+                    </div>
+                </div>
+                <!----------------------------------------------------->
+                <!----------------------------------------------------->
+                <div class="row2-content">
+                    <div class="symptom">Renal biopsy (Tubulointerstitial Nephritis)</div>
+                    <div class="input">
+                        <select id="posRenalBiopsy-el" onchange="keepData(this)">
+                            <option value="">Select</option>
+                            <option value="yes">Positive</option>
+                            <option value="no">Negative</option>
+                            <option value="Don't know">Don't know</option>
+                        </select>
+                    </div>
+                </div>
+                <!----------------------------------------------------->
+                <!----------------------------------------------------->
+                <div class="row2-content">
+                    <div class="symptom">Elevated urine β_microglobulin</div>
+                    <div class="input">
+                        <select id="elUrineBM-el" onchange="keepData(this)">
+                            <option value="">Select</option>
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                            <option value="Don't know">Don't know</option>
+                        </select>
+                    </div>
+                </div>
+                <!----------------------------------------------------->
+                <!----------------------------------------------------->
+                <div class="row2-content">
+                    <div class="symptom">Abnormal urine analysis</div>
+                    <div class="input">
+                        <select id="abUrineAn-el" onchange="keepData(this)">
+                            <option value="">Select</option>
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                            <option value="Don't know">Don't know</option>
+                        </select>
+                    </div>
+                </div>
+                <!----------------------------------------------------->
+                <!----------------------------------------------------->
+                <div class="row2-content">
+                    <div class="symptom">Elevated serum creatinine</div>
+                    <div class="input">
+                        <select id="elSerumCr-el" onchange="keepData(this)">
+                            <option value="">Select</option>
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                            <option value="Don't know">Don't know</option>
+                        </select>
+                    </div>
+                </div>
+                <!----------------------------------------------------->
+                <div class="row2-content">
+                    <div class="symptom click-content" onclick="popContent(this,'syphilis')">Evidence of Treponema pallidum</div>
+                    <div class="input">
+                        <select id="trepPall-el" onchange="keepData(this)">
+                            <option value="">Select</option>
+                            <option value="yes">Positive</option>
+                            <option value="no">Negative</option>
+                            <option value="Don't know">Don't know</option>
+                        </select>
+                    </div>
+                </div>
+                <!----------------------------------------------------->
+                <div id="syphilis-modal" class="modal">
+                    <div class="modal-wrapper">
+                        <div class="image-container">
+                            <div>
+                                <img id="syphilis-x" class="x" src="../../img/modal-x-icon.png" onclick="closeContent(`syphilis`)">
+                            </div>
+                        </div>  
+                        <div class="modal-content">
+                            <ul type="a">
+                                <li>Positive treponemal test and non-treponemal test OR</li>
+                                <li>Positive treponemal test with two different treponemal tests</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!----------------------------------------------------->
+                <div class="row2-content">
+                    <div class="symptom click-content" onclick="popContent(this,'tb')">Evidence of M. tuberculosis</div>
+                    <div class="input">
+                        <select id="tb-el" onchange="keepData(this)">
+                            <option value="">Select</option>
+                            <option value="yes">Positive</option>
+                            <option value="no">Negative</option>
+                            <option value="Don't know">Don't know</option>
+                        </select>
+                    </div>
+                </div>
+                <!----------------------------------------------------->
+                <div id="tb-modal" class="modal">
+                    <div class="modal-wrapper">
+                        <div class="image-container">
+                            <div>
+                                <img id="tb-x" class="x" src="../../img/modal-x-icon.png" onclick="closeContent(`tb`)">
+                            </div>
+                        </div>
+                        <div class="modal-content">
+                            <ul type="a">
+                                <li>Histologically- or microbiologically-confirmed infection with M. tuberculosis OR</li>
+                                <li>Positive interferon-γ release assay (IGRA)† OR</li>
+                                <li>positive tuberculin skin test‡</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!----------------------------------------------------->
+                <div class="row2-content">
+                    <div class="symptom click-content" onclick="popContent(this,'sarcoidosis')">Evidence of sarcoidosis</div>
+                    <div class="input">
+                        <select id="sarcoidosis-el" onchange="keepData(this)">
+                            <option value="">Select</option>
+                            <option value="yes">Positive</option>
+                            <option value="no">Negative</option>
+                             <option value="Don't know">Don't know</option>
+                        </select>
+                    </div>
+                </div>
+                <!----------------------------------------------------->
+                <div id="sarcoidosis-modal" class="modal">
+                    <div class="modal-wrapper">
+                        <div class="image-container">
+                            <div>
+                                <img id="sarcoidosis-x" class="x" src="../../img/modal-x-icon.png" onclick="closeContent(`sarcoidosis`)">
+                            </div>
+                        </div>
+                        <div class="modal-content">
+                            <ul type="a">
+                                <li>Tissue biopsy demonstrating non-caseating granulomata OR</li>
+                                <li>Bilateral hilar adenopathy on chest imaging</li>
+                            </ul>
+                        </div>
+                    </div>  
+                </div>
+                <!----------------------------------------------------->
+            </div>
+            <div class="row3">
+                <div class="backNext">
+                    <div>
+                        <a href="diagnosis04.html"><button class="backButton" onclick="">Back</button></a>
+                    </div>
+                    <div class="nextDiv">
+                        <a href="../result-page/result.html"><button class="nextButton">Next</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="footer-content">
+                © Developing Uveitis Classification Application
+            </div>
+        </footer>
+        <script src="../../js/loading.js"></script>
+        <script>
+            let idList = ['posPcrCmv-el','posPcrHsv-el','posPcrVzv-el','posHlaB27-el',
+            'posRenalBiopsy-el','elUrineBM-el','abUrineAn-el','elSerumCr-el'
+            ,'trepPall-el','tb-el','sarcoidosis-el']
+            loadData(idList);
+            design(5);
+        </script>
+        <script>
+        </script>
+        <script>
+            let element = ``;
+            function popContent(el,dis){
+                element = el;
+                el.classList.toggle('active')
+                let content = el.classList.value;
+                console.log(content)
+                if(content == 'symptom click-content active'){
+                    document.getElementById(`${dis}-modal`).style.display = 'flex';
+                    document.getElementById("diagnosis-container").style.pointerEvents = 'none';
+                    document.getElementById(`${dis}-x`).style.pointerEvents = 'all';
+                }
+            }
+
+            function closeContent(dis){
+                element.classList.toggle('active');
+                document.getElementById(`${dis}-modal`).style.display = 'none';
+                document.getElementById("diagnosis-container").style.pointerEvents = 'all';
+                element = ``;
+            }
+        </script>
+        <script>
+            function warning(){
+                    let text = 
+                    `
+Finish classification?
+Changes that you made will not be saved`;
+                    if (confirm(text) == true) {
+                        sessionStorage.clear();
+                        goToPage('../../index.html')
+                    }
+                }
+        </script>
+    </body>
+</html>

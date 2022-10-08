@@ -170,8 +170,9 @@ select{
     transform: translate(-50%, -50%);
     width: 90%;
     display: none;
-    border: 2px solid black;
-    background-color: #e2e2e2;
+    border: 1px solid black;
+    background-color: #edebeb;
+    border-radius: 10px;
 }
 
 .modal-wrapper{
@@ -186,13 +187,21 @@ select{
     margin-top: 1rem;
     margin-bottom: 2rem;
     margin-right: 3%;
+    line-height: 24px;
 }
 
 .image-container{
     width: 100%;
+    border-bottom: 1px solid rgb(165, 163, 163);
+    padding-top: 10px;
+    padding-bottom: 10px;
     display: flex;
-    align-items: start;
     justify-content: end;
+}
+
+.image-container > div{
+    width: fit-content;
+    padding-right: 10px;
 }
 
 .x{
