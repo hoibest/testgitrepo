@@ -14,7 +14,13 @@
                 <div class="header-icon" onclick="warning()">Uveitis</div>
             </div>
         </header>
-
+        <div class="nav">
+            <div class="nav-wrapper">
+            <div class="backButton" id="backButton">
+                <img style="width:30px;height:30px;transform: rotate(180deg);"src="../../../img/next-angle-icon.png">
+            </div>
+            </div>
+        </div>
         <div class="main">
             <div class="class-title">Classification Criteria for</div>
             <div class="table-of-contents">Sarcoid Uveitis</div>
@@ -95,6 +101,12 @@ Changes that you made will not be saved`;
                     }
                 }
             }
+        </script>
+        <script>
+            const backBtn = document.getElementById('backButton');
+            backBtn.addEventListener('click',function(){
+                history.back();
+            })
         </script>
     </body>
 </html>
