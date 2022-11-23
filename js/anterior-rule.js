@@ -2,6 +2,7 @@ const TRUE = 1;
 const FALSE = 0;
 const IDK = 2;
 const dk = `Don't know`
+const ALL_EXCLUDED = 99;
 
 class ruleList {
     inList = [];
@@ -35,6 +36,8 @@ function numIs(val){
     }
 }
 
+
+let uauList = new ruleList();
 let cmvauList = new ruleList();
 let hsauList = new ruleList();
 let vzvauList = new ruleList();
@@ -45,6 +48,44 @@ let tinuList = new ruleList();
 let sarcauList = new ruleList();
 let tbauList = new ruleList();
 let syphauList = new ruleList();
+
+/*function uauRuleOne(){
+    let rule = 'uau #1';
+    let disList = uauList;
+    let a = IDK; let b = IDK; let c = IDK;
+    a = numIs(ANT_CHAMBER_CELLS);
+    if(VIT_CELLS > 0){
+        if(ANT_CHAMBER_FLARE != dk){
+            if(ANT_CHAMBER_FLARE > 0){
+                b = TRUE;
+            }
+            else{
+                b = FALSE;
+            }
+        }
+        else {
+            b = IDK;
+        }
+    }
+    else if(VIT_CELLS==0){
+        b = TRUE;
+    }
+    else{
+        b = IDK;
+    }
+    c = is(RETINITIS,"no")
+
+    if(a==FALSE||b==FALSE||c==FALSE){disList.outList.push(rule);}
+    else if(a==TRUE&&b==TRUE&&c==TRUE){disList.inList.push(rule);}
+    else{disList.checkList.push(rule);}
+}
+
+function uauRuleTwo(){
+    let rule = 'uau #2';
+    let disList = uauList;
+    let a = IDK;
+    if(dxList.length==0)
+}*/
 
 function cmvauRuleOne(){
     let rule = 'cmvau #1';

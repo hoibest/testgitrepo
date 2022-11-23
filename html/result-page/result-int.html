@@ -1,0 +1,106 @@
+<html>
+    <head>
+        <meta content="initial-scale=1.0, width=device-width" name="viewport">
+        <meta name="theme-color" content="#F3C1B6">
+        <link rel="stylesheet" href="../../css/style.css">
+        <link rel="stylesheet" href="../../css/result.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="header-content">
+                <div class="header-icon" onclick="warning()">Uveitis</div>
+            </div>
+        </header>
+        <div class="nav" id="nav">
+            <div class="nav-content-wrapper">
+                <div class="nav-text-content" id="nav-text-content">
+                    6/6 Result
+                </div>
+                <div class="nav-bar-content">
+                    <div id="nav-greenbar" class="nav-greenbar"></div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="diagnosis-container" id="main-container">
+            <div class="row1">
+                <div>
+                <div class="row1-subtitle" id="hide-subtitle">Please click and see details for each uveitis</div>
+                <div class="row1-title">Result</div>
+                </div>
+            </div>
+            <div class="row2">
+                <div class="uveitides"><div>Classified Uveitides</div></div>
+                <div id="c-uveitides"></div>
+
+                <div class="uveitides"><div>Possible Uveitides</div></div>
+                <div id="p-uveitides"></div>
+
+                <div class="uveitides"><div>Excluded Uveitides</div></div>
+                <div id="e-uveitides"></div>
+                
+            </div>
+            
+        </div>
+
+        <div id="hide-print" style="margin-top: 1rem; margin-left: 6.15%;margin-bottom: 1rem;">
+            <button id="print" style="padding: 0.3rem 0.7rem;" onclick="print_out();">print</button>
+        </div>
+
+
+
+
+        <div class="row3" id="hide-row3">
+            <div class="backNext">
+                <div>
+                    <a href="../intermediate-diagnosis/diagnosis02.html"><button class="backButton" onclick="">Back</button></a>
+                </div>
+                <div class="nextDiv">
+                    <a id="finish"><button class="nextButton" onclick="warning()">Finish</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-content">
+            © Developing Uveitis Classification Application
+        </div>
+    </footer>
+    <script src="../../js/loading.js"></script>
+    <script>design(6)</script>
+    <script src="../../js/patient.js"></script>
+    <script>patient.patientUpdate();</script>
+    <script src="../../js/terms.js"></script>
+    <script src="../../js/intermediate-rule.js"></script>
+    <script>intDiagnosis();</script>
+    <script src="../../js/int-html-rule.js"></script>
+    <script src="../../js/intermediate-term.js"></script>
+    <script src="../../js/sort-int.js"></script>
+    <script>
+        document.getElementById('c-uveitides').innerHTML = joinText(dxText,"");
+        document.getElementById('p-uveitides').innerHTML = joinText(possText,"");
+        document.getElementById('e-uveitides').innerHTML = joinText(exText,"");
+    </script>
+    <script>
+        function warning(){
+                    let text = 
+                    `
+Finish classification?
+Changes that you made will not be saved`;
+                    if (confirm(text) == true) {
+                        sessionStorage.clear();
+                        goToPage('../../index.html')
+                    }
+                }
+    </script>
+    <script>
+        function print_out(){
+            print();
+        }
+    </script>
+</body>
+</html>

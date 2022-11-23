@@ -22,6 +22,9 @@ const VIT_HAZE = p.ophthalExamObj.vitHaze;
 //const VITRITIS = p.ophthalExamObj.vitritis;
 const CHOROIDITIS = p.ophthalExamObj.choroiditis;
 const RETINITIS = p.ophthalExamObj.retinitis;
+const INT_RET_VAS_OCCLUSION = p.ophthalExamObj.intRetVasOcclusion;
+const SNOWBANKS = p.ophthalExamObj.snowbanks;
+const SNOWBALLS = p.ophthalExamObj.snowballs;
 //const RET_VAS_CHANGES = p.ophthalExamObj.retVasChanges;
 ///////////////////////////////////////////////////////////////////////
 const DERM_HZ = p.pathologyObj.dermHZ;
@@ -29,6 +32,7 @@ const OLIGO_ARTH = p.pathologyObj.oligoArth;
 const RF_NEG_POLY_ARTH = p.pathologyObj.rfNegPolyArth;
 const JUV_PSOR_ARTH = p.pathologyObj.juvPsorArth;
 const SPONDYLO_ARTH = p.pathologyObj.spondyloArth;
+const MS = p.pathologyObj.ms;
 ///////////////////////////////////////////////////////////////////////
 const POS_PCR_CMV = p.labObj.posPcrCmv;
 const POS_PCR_HSV = p.labObj.posPcrHsv;

@@ -32,7 +32,9 @@ const ophthalExamObj = {
     //vitritis : DK,
     //choroiditis : DK,
     retinitis : DK,
-    //retVasChanges : DK,
+    intRetVasOcclusion : DK,
+    snowbanks : DK,
+    snowballs : DK,
     update : function () {
         this.keratitis = getSavedData('keratitis-el');
         this.kp = getSavedData('kp-el');
@@ -48,7 +50,9 @@ const ophthalExamObj = {
         //this.vitritis = getSavedData('vitritis-el');
         this.choroiditis = getSavedData('choroiditis-el');
         this.retinitis = getSavedData('retinitis-el');
-        //this.retVasChanges = getSavedData('retVasChanges-el');
+        this.intRetVasOcclusion = getSavedData('intRetVasOcclusion-el');
+        this.snowballs = getSavedData('snowballs-el');
+        this.snowbanks = getSavedData('snowbanks-el');
     }
 }
 
@@ -58,12 +62,14 @@ const pathologyObj = {
     rfNegPolyArth : DK,
     juvPsorArth : DK,
     spondyloArth : DK,
+    ms: DK,
     update : function (){
         this.dermHZ = getSavedData('dermHZ-el');
         this.oligoArth = getSavedData('oligoArth-el');
         this.rfNegPolyArth = getSavedData('rfNegPolyArth-el');
         this.juvPsorArth = getSavedData('juvPsorArth-el');
         this.spondyloArth = getSavedData('spondyloArth-el');
+        this.ms = getSavedData('ms-el');
     }
 }
 

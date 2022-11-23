@@ -1,0 +1,123 @@
+<html>
+    <head>
+        <meta content="initial-scale=1.0, width=device-width" name="viewport">
+        <meta name="theme-color" content="#F3C1B6">
+        <link rel="stylesheet" href="../../css/style.css">
+        <link rel="stylesheet" href="../../css/diagnosis.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="header-content">
+                <div class="header-icon" onclick="warning()">Uveitis</div>
+            </div>
+        </header>
+        <div class="nav">
+            <div class="nav-content-wrapper">
+                <div class="nav-text-content" id="nav-text-content">
+                    2/6 title
+                </div>
+                <div class="nav-bar-content">
+                    <div id="nav-greenbar" class="nav-greenbar"></div>
+                </div>
+            </div>
+        </div>
+        <div class="diagnosis-container">
+            <div class="row1">
+                <div>
+                <div class="row1-subtitle">Please select the characteristics in each box below</div>
+                <div class="row1-title">Uveitis blahblah</div>
+                </div>
+            </div>
+            <!----------------------------------------------------------->
+            <div class="row2">
+                <!----------------------------------------------------->
+                <!----------------------------------------------------->
+                <div class="row2-content">
+                    <div class="symptom">Multiple Sclerosis</div>
+                    <div class="input">
+                        <select id="ms-el" onchange="keepData(this)">
+                            <option value="">Select</option>
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                             <option value="Don't know">Don't know</option>
+                        </select>
+                    </div>
+                </div>
+                <!----------------------------------------------------->
+                <!----------------------------------------------------->
+                <div class="row2-content">
+                    <div class="symptom">Vitreous snowballs</div>
+                    <div class="input">
+                        <select id="snowballs-el" onchange="keepData(this)">
+                            <option value="">Select</option>                           
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                             <option value="Don't know">Don't know</option>
+                        </select>
+                    </div>
+                </div>
+                <!----------------------------------------------------->
+                <div class="row2-content">
+                    <div class="symptom">Pars plana snowbanks</div>
+                    <div class="input">
+                        <select id="snowbanks-el" onchange="keepData(this)">
+                            <option value="">Select</option>                           
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                             <option value="Don't know">Don't know</option>
+                        </select>
+                    </div>
+                </div>
+                <!----------------------------------------------------->
+                <div class="row2-content">
+                    <div class="symptom">Retinal vascular occlusion in posterior pole & mid-periphery</div>
+                    <div class="input">
+                        <select id="intRetVasOcclusion-el" onchange="keepData(this)">
+                            <option value="">Select</option>                           
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                             <option value="Don't know">Don't know</option>
+                        </select>
+                    </div>
+                </div>
+                <!----------------------------------------------------->
+            </div>
+            <div class="row3">
+                <div class="backNext">
+                    <div>
+                        <a href="diagnosis01.html"><button class="backButton" onclick="">Back</button></a>
+                    </div>
+                    <div class="nextDiv">
+                        <a href="../result-page/result-int.html"><button class="nextButton">Next</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="footer-content">
+                © Developing Uveitis Classification Application
+            </div>
+        </footer>
+        <script src="../../js/loading.js"></script>
+        <script>
+            let idList = ['ms-el','snowbanks-el','snowballs-el','intRetVasOcclusion-el']
+            loadData(idList);
+            design(2);
+        </script>
+        <script>
+        function warning(){
+                    let text = 
+                    `
+Finish classification?
+Changes that you made will not be saved`;
+                    if (confirm(text) == true) {
+                        sessionStorage.clear();
+                        goToPage('../../index.html')
+                    }
+                }
+        </script>
+    </body>
+</html>
