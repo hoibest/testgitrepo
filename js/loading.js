@@ -35,9 +35,8 @@ function getSavedData(id){
     return sessionStorage.getItem(id)
 }
 
-function design(num){
-    const tot = 6;
-    const per = 100/6;
+function design(num,tot){
+    const per = 100/tot;
     document.getElementById('nav-greenbar').style.width = num*per + "%"; 
     if(num==tot){
         document.getElementById('nav-greenbar').style.borderRadius = 5+'px';
