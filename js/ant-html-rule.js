@@ -17,7 +17,7 @@ const vzvauEx =
 `<ul>
 <li>Positive serology for syphilis using a treponemal test</li>
 <li>Evidence of sarcoidosis (either bilateral hilar adenopathy on chest imaging or tissue biopsy demonstrating non-caseating granulomata)</li>
-<li>3.	Aqueous specimen PCR positive for cytomegalovirus or herpes simplex virus</li>
+<li>Aqueous specimen PCR positive for cytomegalovirus or herpes simplex virus</li>
 </ul>`
 
 const fusEx = 

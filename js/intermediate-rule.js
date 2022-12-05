@@ -265,6 +265,6 @@ function intDiagnosis(){
     
 
     console.log(`dxList: ${dxList}
-possList: ${possList}
-exList: ${exList}`)
+    possList: ${possList}
+    exList: ${exList}`)
 }
