@@ -328,6 +328,28 @@ const tbauRule_2 = {
     }
 }
 
+const uauRule_1 = {
+    ruleName : "uau #1",
+    rule : tbauRule_1_html,
+    variableNames: [`Anterior chamber cells`,`Iris nodules`],
+    variableValues: [ANT_CHAMBER_CELLS,IRIS_NODULES],
+    href:[html_2,html_2],
+    userInput : function() {
+        return inputText(this.variableNames,this.variableValues,this.href,this.rule);
+    }
+}
+
+const uauRule_2 = {
+    ruleName : "uau #2",
+    rule : tbauRule_2_html,
+    variableNames: [`M. tuberculosis`],
+    variableValues: [TB],
+    href: [html_5],
+    userInput : function() {
+        return inputText(this.variableNames,this.variableValues,this.href,this.rule);
+    }
+}
+
 ///////////////////////////////////////
 
 

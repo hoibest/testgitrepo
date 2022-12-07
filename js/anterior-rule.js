@@ -49,43 +49,6 @@ let sarcauList = new ruleList();
 let tbauList = new ruleList();
 let syphauList = new ruleList();
 
-/*function uauRuleOne(){
-    let rule = 'uau #1';
-    let disList = uauList;
-    let a = IDK; let b = IDK; let c = IDK;
-    a = numIs(ANT_CHAMBER_CELLS);
-    if(VIT_CELLS > 0){
-        if(ANT_CHAMBER_FLARE != dk){
-            if(ANT_CHAMBER_FLARE > 0){
-                b = TRUE;
-            }
-            else{
-                b = FALSE;
-            }
-        }
-        else {
-            b = IDK;
-        }
-    }
-    else if(VIT_CELLS==0){
-        b = TRUE;
-    }
-    else{
-        b = IDK;
-    }
-    c = is(RETINITIS,"no")
-
-    if(a==FALSE||b==FALSE||c==FALSE){disList.outList.push(rule);}
-    else if(a==TRUE&&b==TRUE&&c==TRUE){disList.inList.push(rule);}
-    else{disList.checkList.push(rule);}
-}
-
-function uauRuleTwo(){
-    let rule = 'uau #2';
-    let disList = uauList;
-    let a = IDK;
-    if(dxList.length==0)
-}*/
 
 function cmvauRuleOne(){
     let rule = 'cmvau #1';
@@ -929,6 +892,73 @@ function sarcauDiagnosis(){
     }
 }
 
+function uauRuleOne (){
+    let rule = 'uau #1';
+    let disList = uauList;
+    let a = IDK; let b = IDK; let c = IDK;
+
+    a = numIs(ANT_CHAMBER_CELLS);
+    if(VIT_CELLS>0){
+        if(VIT_HAZE!=`Don't know`&&ANT_CHAMBER_FLARE!=`Don't know`){
+            if(VIT_HAZE >= ANT_CHAMBER_FLARE){
+                b = FALSE;
+            }
+            else{
+                b = TRUE;
+            }
+        }
+        else{
+            b = IDK;
+        }
+    }
+    else if(VIT_CELLS==0){
+        b = TRUE;
+    }
+    else { //vitCells == idk
+        b = IDK;
+    }
+    c = is(RETINITIS,"no");
+
+    if(a==FALSE||b==FALSE||c==FALSE){
+        disList.outList.push(rule);
+    }
+    else if(a==TRUE&&b==TRUE&&c==TRUE){
+        disList.inList.push(rule);
+    }
+    else{
+        disList.checkList.push(rule);
+    }
+}
+
+/*function uauRuleTwe (){
+    let rule = 'uau #2';
+    let disList = uauList;
+    let a = IDK;
+    if(dxList.length==0){
+        a = FALSE;
+    }
+    else {
+        a = TRUE;
+    }
+}
+
+function uauDiagnosis(){
+    let disList = uauList;
+    uauRuleOne();
+    uauRuleTwo();
+    if(disList.outList.includes('uau #1')||disList.outList.includes('uau #2')){
+        exList.push('UAU');
+    }
+    else if(disList.inList.includes('uau #1')&&disList.inList.includes('uau #2')){
+        dxList.push('UAU');
+    }
+    else{
+        possList.push('UAU');
+    }
+}*/
+
+let uau = IDK;
+
 function antDiagnosis(){
     cmvauDiagnosis();
     hsauDiagnosis();
@@ -940,7 +970,13 @@ function antDiagnosis(){
     syphauDiagnosis();
     sarcauDiagnosis();
     tbauDiagnosis();
-
+    if(possList.length==0 && dxList.length==0){
+        uau = TRUE;
+        console.log(`UAU = ${uau}`)
+    }
+    else if(dxList.length==0 && possList!=0){
+        uau = IDK;
+    }
     console.log(`dxList: ${dxList}
 possList: ${possList}
 exList: ${exList}`)

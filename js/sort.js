@@ -323,8 +323,7 @@ function createBtn(dis,type){
 
 
 
-if(dxList.length==0){
-    if(ANT_CHAMBER_CELLS > 0){
+if(uau == TRUE){
         let c = COURSE;
         let l = LATERALITY;
         if(c==`Don't know`){c=`(unknown course)`;}
@@ -353,9 +352,7 @@ if(dxList.length==0){
                 </div>
             </div>`
         );
-    }
-}
-else{
+}else{
     for(let i = 0; i < dxList.length; i++){
         for(let j = 0; j < antUveitisList.length; j++){
             if(dxList[i]==antUveitisList[j].nameShort){
@@ -365,12 +362,44 @@ else{
     }
 }
 
+
+
 for(let i = 0; i < possList.length; i++){
     for(let j = 0; j < antUveitisList.length; j++){
         if(possList[i]==antUveitisList[j].nameShort){
             possText.push(createBtn(antUveitisList[j],"p-comp1"));
         }
     }
+}
+if(uau == IDK){
+    let c = COURSE;
+    let l = LATERALITY;
+    if(c==`Don't know`){c=`(unknown course)`;}
+    if(l==`Don't know`){l=`(unknown laterality)`;}
+    let undifferentiated = `Undifferentiated, ${l}, ${c} anterior uveitis`
+    possText.push(
+        `<div class="content" id="undifferentiated" onclick="showModal(this)">
+            <div class="p-comp1"></div>
+            <div class='comp2'>Undifferentiated Anterior Uveitis</div>
+            <div class='comp4'></div>
+            <div class='comp3' id="comp3-undifferentiated"><img src='../../img/dropdown-icon.png'></div>
+        </div>
+        <div class="show-result" id="show-result-undifferentiated">
+            <div id="criteria-not-fulfilled" class="not-fulfilled">
+                <div style="font-size:16px;font-weight:400;">${undifferentiated}</div>
+                <br>
+                <div style="font-size:12px;font-weight:400; margin-bottom: 2rem;">
+
+                    Anterior chamber cells: ${ANT_CHAMBER_CELLS}<br>
+                    Vitreous cells: ${VIT_CELLS}<br>
+                    Choroiditis: ${CHOROIDITIS}<br>
+                    Retinitis: ${RETINITIS}<br><br>
+                    50% of presented uveitis cases are undifferentiated. 
+                    <br> 
+                </div>
+            </div>
+        </div>`
+    );
 }
 
 for(let i = 0; i < exList.length; i++){
