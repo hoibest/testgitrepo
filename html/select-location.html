@@ -14,6 +14,13 @@
                 <div class="header-icon" onclick="goToPage('../index.html')">Uveitis</div>
             </div>
         </header>
+        <div class="nav">
+            <div class="nav-wrapper">
+                <div class="backButton" id="backButton">
+                    <img style="width:30px;height:30px;transform: rotate(180deg);"src="../../../img/next-angle-icon.png">
+                </div>
+            </div>
+        </div>
 
         <div class="main">
             <div class="select-title">Start Uveitis Classification</div>
@@ -39,12 +46,12 @@
                     <div class="anat-comp2">Panveitis<span style="font-weight: 300; font-size:10px;"> (update soon)</span></div>
                     <div class="anat-comp3"><img src="../img/next-angle-icon.png" class="next-icon"></div>
                 </div>
-                <div class="anat-btn" style='background-color: #F3C1B6;' onclick="goToPage('../index.html')">
+                <!--div class="anat-btn" style='background-color: #F3C1B6;' onclick="goToPage('../index.html')">
                     <div class="anat-comp1"><img src="../img/home-icon.png" style='width: 23px;
                         height: 23px;'></div>
                     <div class="anat-comp2">Front Page</span></div>
                     <div class="anat-comp3"><img src="../img/next-angle-icon.png" class="next-icon"></div>
-                </div>
+                </div-->
             </div>
         </div>
 
@@ -58,6 +65,12 @@
             function goToPage(url){
                 window.location = url;
             }
+        </script>
+        <script>
+            const backBtn = document.getElementById('backButton');
+            backBtn.addEventListener('click',function(){
+                history.back();
+            })
         </script>
     </body>
 </html>

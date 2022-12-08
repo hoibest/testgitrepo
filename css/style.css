@@ -5,6 +5,9 @@ body{
 
 header{
     background-color: #F3C1B6;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 .header-content{
@@ -13,7 +16,7 @@ header{
     font-size: 1.25rem;
     font-weight: 700;
     padding-top: 1rem;
-    padding-bottom: 60px;
+    padding-bottom: 3.625rem;
     color: #FFFFFF;
 }
 
@@ -24,9 +27,10 @@ header{
 
 
 .main{
+    border: 1px dotted green;
     width : 87.7%;
     margin: 0 auto;
-    padding-top: 1rem;
+    padding-top: 7rem;
     margin-bottom: 3rem;
     display: flex;
     flex-direction: column;
