@@ -57,10 +57,8 @@
                     </ul>
                 </div>
                 <div class="citation">
+                    <span style="font-size:1rem; font-weight: 500;">References </span><br>
                     Standardization of Uveitis Nomenclature Working Group.  Classification criteria for cytomegalovirus anterior uveitis.  Am J Ophthalmol 2021;228:89-95.                
-                </div>
-                <div id="hide-print" style="margin-top: 1rem;">
-                    <button id="print">print</button>
                 </div>
             </div>
         </div>
@@ -78,12 +76,6 @@
         </script>
         <script src="../../../js/loading.js"></script>
         <script>
-            const printBtn = document.getElementById('print');
-            printBtn.addEventListener('click',function(){
-                print();
-            })
-        </script>
-        <script>
             function warning(){
                 if(sessionStorage.length<=1){
                     goToPage('../../../index.html')
@@ -99,12 +91,6 @@ Changes that you made will not be saved`;
                     }
                 }
             }
-        </script>
-        <script>
-            const backBtn = document.getElementById('backButton');
-            backBtn.addEventListener('click',function(){
-                history.back();
-            })
         </script>
     </body>
 </html>

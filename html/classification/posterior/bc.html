@@ -11,9 +11,16 @@
     <body>
         <header>
             <div class="header-content">
-                <div class="header-icon" onclick="goToPage('../../../index.html')">Uveitis</div>
+                <div class="header-icon" onclick="warning()">Uveitis</div>
             </div>
         </header>
+        <div class="nav">
+            <div class="nav-wrapper">
+            <div class="backButton" id="backButton">
+                <img style="width:30px;height:30px;transform: rotate(180deg);"src="../../../img/next-angle-icon.png">
+            </div>
+            </div>
+        </div>
 
         <div class="main">
             <div class="class-title">Classification Criteria for</div>
@@ -61,10 +68,8 @@
                     </ul>
                 </div>
                 <div class="citation">
+                    <span style="font-size:1rem; font-weight: 500;">References </span><br>
                     Standardization of Uveitis Nomenclature Working Group.  Classification criteria for birdshot retinochoroiditis.  Am J Ophthalmol 2021;228:65-71.                    
-                </div>
-                <div id="hide-print" style="margin-top: 1rem;">
-                    <button id="print">print</button>
                 </div>
             </div>
         </div>
@@ -79,9 +84,11 @@
             function goToPage(url){
                 window.location = url;
             }
-            const printBtn = document.getElementById('print');
-            printBtn.addEventListener('click',function(){
-                print();
+        </script>
+        <script>
+            const backBtn = document.getElementById('backButton');
+            backBtn.addEventListener('click',function(){
+                history.back();
             })
         </script>
     </body>
