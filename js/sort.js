@@ -346,7 +346,8 @@ if(uau == TRUE){
                         Vitreous cells: ${VIT_CELLS}<br>
                         Choroiditis: ${CHOROIDITIS}<br>
                         Retinitis: ${RETINITIS}<br><br>
-                        50% of presented uveitis cases are undifferentiated. 
+                        50% of presented uveitis cases are undifferentiated. <br>
+                        IF ALL LIKELY SUN DISORDERS ARE EXCLUDED THEN THE PATIENT HAS UNDIFFERENTIATED UVEITIS
                         <br> 
                     </div>
                 </div>
@@ -394,7 +395,8 @@ if(uau == IDK){
                     Vitreous cells: ${VIT_CELLS}<br>
                     Choroiditis: ${CHOROIDITIS}<br>
                     Retinitis: ${RETINITIS}<br><br>
-                    50% of presented uveitis cases are undifferentiated. 
+                    50% of presented uveitis cases are undifferentiated. <br>
+                    IF ALL LIKELY SUN DISORDERS ARE EXCLUDED THEN THE PATIENT HAS UNDIFFERENTIATED UVEITIS.
                     <br> 
                 </div>
             </div>
