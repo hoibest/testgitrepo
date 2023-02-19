@@ -605,9 +605,11 @@ function sauRuleThree(){
     let rule = 'sau #3';
     let disList = sauList;
     let a = IDK;
+    let b = IDK;
     a = is(SPONDYLO_ARTH,"yes");
-    if(a==FALSE){disList.outList.push(rule)}
-    else if(a==TRUE){disList.inList.push(rule)}
+    b = is(POS_HLA_B27,"yes")
+    if(a==FALSE && b==FALSE){disList.outList.push(rule)}
+    else if(a==TRUE || b==TRUE){disList.inList.push(rule)}
     else{disList.checkList.push(rule)}
 }
 
@@ -747,7 +749,7 @@ function tinuDiagnosis(){
     }
 }
 
-function syphauRuleOne (){
+/*function syphauRuleOne (){
     let rule = 'syphau #1';
     let disList = syphauList;
     let a = IDK; 
@@ -890,7 +892,7 @@ function sarcauDiagnosis(){
     else{
         possList.push('SARCAU');
     }
-}
+}*/
 
 function uauRuleOne (){
     let rule = 'uau #1';
@@ -967,9 +969,9 @@ function antDiagnosis(){
     jiacauDiagnosis();
     sauDiagnosis();
     tinuDiagnosis();
-    syphauDiagnosis();
-    sarcauDiagnosis();
-    tbauDiagnosis();
+    //syphauDiagnosis();
+    //sarcauDiagnosis();
+    //tbauDiagnosis();
     if(possList.length==0 && dxList.length==0){
         uau = TRUE;
         console.log(`UAU = ${uau}`)

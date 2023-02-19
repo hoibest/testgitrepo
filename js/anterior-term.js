@@ -1,8 +1,16 @@
-const html_1 = "../anterior-diagnosis/diagnosis01.html";
+//Temporarily making html_1 to html_5 into html_all
+/*const html_1 = "../anterior-diagnosis/diagnosis01.html";
 const html_2 = "../anterior-diagnosis/diagnosis02.html";
 const html_3 = "../anterior-diagnosis/diagnosis03.html";
 const html_4 = "../anterior-diagnosis/diagnosis04.html";
-const html_5 = "../anterior-diagnosis/diagnosis05.html";
+const html_5 = "../anterior-diagnosis/diagnosis05.html";*/
+const html_all = "../anterior-diagnosis/diagnosis-all.html";
+const html_1 = html_all;
+const html_2 = html_all;
+const html_3 = html_all;
+const html_4 = html_all;
+const html_5 = html_all;
+
 
 function joinText(arr,slice){
     let text = arr.join(slice);
