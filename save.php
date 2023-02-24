@@ -1,9 +1,9 @@
 <?php
 // Connect to the database
-/*$servername = "localhost:3307";
-$username = "root";
-$password = "";
-$dbname = "uveitis";
+$servername = "us-cdbr-east-06.cleardb.net";
+$username = "b69582e5f21d76";
+$password = "d51ada97";
+$dbname = "heroku_73844ce018440f3";
 $conn = new mysqli($servername, $username, $password, $dbname);
 
 // Check connection 
@@ -32,7 +32,5 @@ echo "record saved";
 
 mysqli_close($conn);
 
-echo '<p><a href="javascript:history.go(-1)" title="Return to previous page">« Go back</a></p>';*/
-
-echo "hi";
+echo '<p><a href="javascript:history.go(-1)" title="Return to previous page">« Go back</a></p>';
 ?>
