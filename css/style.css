@@ -133,6 +133,12 @@ footer{
     header,header * {
         display: none;
     }
+    #hide-nav,#hide-nav * {
+        display: none;
+    }
+    #hide-buttons,#hide-buttons * {
+        display: none;
+    }
     footer, footer *{
         display: none;
     }
