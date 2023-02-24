@@ -35,6 +35,8 @@
 
             // Step 4: Close the database connection
             mysqli_close($conn);
+
+            echo '<p><a href="javascript:history.go(-1)" title="Return to previous page">« Go back</a></p>';
         ?>
     </table>
 </body>
