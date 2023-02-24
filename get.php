@@ -24,7 +24,6 @@
             // Step 2: Execute the SQL query
             $sql = "SELECT id, onset, course, laterality FROM patient_info";
             $result = mysqli_query($conn, $sql);
-            var_dump (mysqli_fetch_assoc($result));
             // Step 3: Fetch the data from the result set
             if (mysqli_num_rows($result) > 0) {
             while($row = mysqli_fetch_assoc($result)) {
