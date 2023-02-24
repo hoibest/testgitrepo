@@ -14,10 +14,10 @@
 		</tr>
         <?php
             // Step 1: Connect to the database
-            $servername = "localhost:3307";
-            $username = "root";
-            $password = "";
-            $dbname = "uveitis";
+            $servername = "us-cdbr-east-06.cleardb.net";
+            $username = "b69582e5f21d76";
+            $password = "d51ada97";
+            $dbname = "heroku_73844ce018440f3";
 
             $conn = mysqli_connect($servername, $username, $password, $dbname);
 
