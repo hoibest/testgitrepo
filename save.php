@@ -1,6 +1,6 @@
 <?php
 // Connect to the database
-$servername = "localhost:3307";
+/*$servername = "localhost:3307";
 $username = "root";
 $password = "";
 $dbname = "uveitis";
@@ -32,5 +32,7 @@ echo "record saved";
 
 mysqli_close($conn);
 
-echo '<p><a href="javascript:history.go(-1)" title="Return to previous page">« Go back</a></p>';
+echo '<p><a href="javascript:history.go(-1)" title="Return to previous page">« Go back</a></p>';*/
+
+echo "hi";
 ?>
