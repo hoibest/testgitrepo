@@ -62,8 +62,27 @@
 .row1-subtitle{font-size: 0.75rem; font-family: 'Poppins',sans-serif;}
 .row1-title{font-size: 1.5rem; font-family: 'Poppins',sans-serif;}
 
-.diagnosis-container > .row2{
+.diagnosis-container > .temp {
     width: 87.7%;
+    display: flex;
+    flex-direction: column;
+    border: 1px dotted red;
+    justify-content: center;
+}
+
+.save-button {
+    background-color: #59A77D;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: white;
+    padding: 0.5rem 1.25rem;
+}
+
+.diagnosis-container > .temp > .row2{
+    border: 1px dotted green;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -73,6 +92,7 @@
 }
 
 .row2-content {
+    border: 1px dotted green;
     padding-top: 0.88rem; 
     padding-bottom: 0.88rem; 
     border-bottom: 1px solid #e2e2e2;
